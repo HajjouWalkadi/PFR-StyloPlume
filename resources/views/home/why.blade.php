@@ -157,7 +157,7 @@
                            Free Shiping
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           Enjoy free shipping on all orders - no minimum purchase required! Shop now and save on shipping costs
                         </p>
                      </div>
                   </div>
