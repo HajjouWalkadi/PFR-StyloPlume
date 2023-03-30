@@ -2,7 +2,7 @@
          <div class="container">
             <div class="box">
                <div class="arrival_bg_box">
-                  <img src="images/arrival-bg.png" alt="">
+                  <img src="https://i.pinimg.com/564x/a7/b6/63/a7b663f40e408588cd840a4e43596567.jpg" alt="">
                </div>
                <div class="row">
                   <div class="col-md-6 ml-auto">
