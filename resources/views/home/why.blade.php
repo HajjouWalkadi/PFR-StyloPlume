@@ -63,36 +63,7 @@
                                     C281.901,181.576,281.901,176.501,278.771,173.37z" />
                               </g>
                            </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
-                           <g>
-                           </g>
+                     
                         </svg>
                      </div>
                      <div class="detail-box">
@@ -100,7 +71,7 @@
                            Fast Delivery
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           Our fast delivery service guarantees that you will receive your products as quickly as possible, so you can enjoy them without waiting!
                         </p>
                      </div>
                   </div>
