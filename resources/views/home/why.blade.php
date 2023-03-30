@@ -178,7 +178,7 @@
                            Best Quality
                         </h5>
                         <p>
-                           variations of passages of Lorem Ipsum available
+                           Experience the best quality products that are built to last! Our commitment to quality ensures that you will be satisfied with every purchase.
                         </p>
                      </div>
                   </div>
