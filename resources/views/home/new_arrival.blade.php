@@ -12,8 +12,7 @@
                         </h2>
                      </div>
                      <p style="margin-top: 20px;margin-bottom: 30px;">
-                        Vitae fugiat laboriosam officia perferendis provident aliquid voluptatibus dolorem, fugit ullam sit earum id eaque nisi hic? Tenetur commodi, nisi rem vel, ea eaque ab ipsa, autem similique ex unde!
-                     </p>
+                        Introducing our latest collection of cottagecore stationery, filled with charming and whimsical designs that will transport you to a peaceful countryside retreat. Each piece in this collection is delicately crafted with floral patterns, soft pastel hues, and rustic textures, capturing the essence of the cottagecore aesthetic. From elegant notebooks to vintage-inspired letter sets, our new arrivals of cottagecore stationery offer a delightful writing experience for all your musings and correspondence. Bring a touch of idyllic charm to your everyday life with our new arrivals of cottagecore stationery.                     </p>
                      <a href="">
                      Shop Now
                      </a>

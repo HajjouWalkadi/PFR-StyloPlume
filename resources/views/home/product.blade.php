@@ -5,308 +5,167 @@
                   Our <span>products</span>
                </h2>
             </div>
+            
+
             <div class="row">
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Men's Shirt
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p1.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $75
-                        </h6>
-                     </div>
-                  </div>
+                           <span class="product-discount-label">-23%</span>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Women's Blouse Top</a></h3>
+                           <div class="price">$53.55 <span>$68.88</span></div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p2.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $80
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p3.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $68
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p4.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $70
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p5.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $75
-                        </h6>
-                     </div>
-                  </div>
+                           <span class="product-discount-label">-20%</span>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p6.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $58
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p7.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $80
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
+               <div class="col-md-3 col-sm-6">
+                   <div class="product-grid">
+                       <div class="product-image">
+                           <a href="#" class="image">
+                               <img src="https://i.pinimg.com/564x/57/11/35/571135a25988e6e06a0b1cb572eea173.jpg">
                            </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p8.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
+                           <ul class="product-links">
+                               <li><a href="#"><i class="fa fa-search"></i></a></li>
+                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                           </ul>
+                           <a href="" class="add-to-cart">Add to Cart</a>
+                       </div>
+                       <div class="product-content">
+                           <h3 class="title"><a href="#">Men's Jacket</a></h3>
+                           <div class="price">$75.55</div>
+                       </div>
+                   </div>
                </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p9.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p10.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p11.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Men's Shirt
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-4 col-lg-4">
-                  <div class="box">
-                     <div class="option_container">
-                        <div class="options">
-                           <a href="" class="option1">
-                           Add To Cart
-                           </a>
-                           <a href="" class="option2">
-                           Buy Now
-                           </a>
-                        </div>
-                     </div>
-                     <div class="img-box">
-                        <img src="images/p12.png" alt="">
-                     </div>
-                     <div class="detail-box">
-                        <h5>
-                           Women's Dress
-                        </h5>
-                        <h6>
-                           $65
-                        </h6>
-                     </div>
-                  </div>
-               </div>
-            </div>
+               
+           </div>
+
+
             <div class="btn-box">
                <a href="">
                View All products
