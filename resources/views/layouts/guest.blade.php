@@ -16,9 +16,14 @@
 
         <style>
             .loginbackgrn{
-                background-image: url('https://img.freepik.com/free-photo/present-box-scissors-snags-letters_23-2147966098.jpg?size=626&ext=jpg');
+                background-image: url('https://img.freepik.com/free-photo/flat-lay-celebrative-wedding-arrangement-mock-up_23-2148289696.jpg?size=626&ext=jpg');
                 background-repeat: no-repeat;
+                /* background-color: red; */
                 background-size: cover;
+            }
+            .backlog{
+                background: rgba(243, 251, 251, 0.5);
+                border-radius: 9px;
             }
         
             .font-sans {
@@ -27,9 +32,20 @@
         </style>
         
     </head>
-    <body>
+    {{-- <body>
         <div class="font-sans text-gray-900 antialiased loginbackgrn" style="background-image: url('https://img.freepik.com/free-photo/present-box-scissors-snags-letters_23-2147966098.jpg?size=626&ext=jpg')">
             {{ $slot }}
+        </div>
+    </body> --}}
+
+
+    <body class="font-sans text-gray-900 antialiased ">
+        <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 loginbackgrn">
+            
+
+            <div class="w-full sm:max-w-md mt-6 px-6 py-4 backlog">
+                {{ $slot }}
+            </div>
         </div>
     </body>
 </html>
