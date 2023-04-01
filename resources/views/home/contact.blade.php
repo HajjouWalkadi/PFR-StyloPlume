@@ -5,10 +5,12 @@
     {{-- <link rel="stylesheet" href="../../../public/home/css/style.css"> --}}
     @include('home.csshome')
 </head>
-<body>
+<body style="background-color: beige">
     @include('home.header')
     <!--Section: Contact v.2-->
-<section class="mb-4">
+<section class="mb-4" >
+    {{-- url('../../../public/images/copy-space-surrounded-by-stationery.jpg') --}}
+    {{-- C:\xampp\htdocs\stylocomm\public\images\copy-space-surrounded-by-stationery.jpg --}}
 
     <!--Section heading-->
     <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
@@ -27,7 +29,7 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0 p-0">
+                        <div class="md-form mb-0 p-2">
                             <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
                             <label for="name" class="">Your name</label>
                         </div>
@@ -36,7 +38,7 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0 p-0">
+                        <div class="md-form mb-0 p-2">
                             <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email">
                             <label for="email" class="" >Your email</label>
                         </div>
@@ -49,7 +51,7 @@
                 <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="md-form mb-0 p-0">
+                        <div class="md-form mb-0 p-2">
                             <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject">
                             <label for="subject" class="">Subject</label>
                         </div>
@@ -63,7 +65,7 @@
                     <!--Grid column-->
                     <div class="col-md-12">
 
-                        <div class="md-form p-0">
+                        <div class="md-form p-2">
                             <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Enter your message"></textarea>
                             <label for="message">Your message</label>
                         </div>
@@ -74,7 +76,7 @@
 
             </form>
 
-            <div class="text-center text-md-left p-0">
+            <div class="text-center text-md-left p-2">
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
@@ -84,15 +86,15 @@
         <!--Grid column-->
         <div class="col-md-3 text-center">
             <ul class="list-unstyled mb-0">
-                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                <li><i class="bi bi-geo-alt-fill"></i>
                     <p>San Francisco, CA 94126, USA</p>
                 </li>
 
-                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                <li><i class="bi bi-telephone-fill"></i>
                     <p>+ 01 234 567 89</p>
                 </li>
 
-                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                <li><i class="bi bi-envelope-fill"></i>
                     <p>contact@mdbootstrap.com</p>
                 </li>
             </ul>
