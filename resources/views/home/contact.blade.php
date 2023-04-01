@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {{-- <link rel="stylesheet" href="../../../public/contact/main.css"> --}}
+    {{-- <link rel="stylesheet" href="../../../public/home/css/style.css"> --}}
+    @include('home.csshome')
 </head>
 <body>
+    @include('home.header')
     <!--Section: Contact v.2-->
 <section class="mb-4">
 
@@ -23,8 +27,8 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
+                        <div class="md-form mb-0 p-0">
+                            <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
                             <label for="name" class="">Your name</label>
                         </div>
                     </div>
@@ -32,9 +36,9 @@
 
                     <!--Grid column-->
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
+                        <div class="md-form mb-0 p-0">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Enter your email">
+                            <label for="email" class="" >Your email</label>
                         </div>
                     </div>
                     <!--Grid column-->
@@ -45,8 +49,8 @@
                 <!--Grid row-->
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
+                        <div class="md-form mb-0 p-0">
+                            <input type="text" id="subject" name="subject" class="form-control" placeholder="Enter subject">
                             <label for="subject" class="">Subject</label>
                         </div>
                     </div>
@@ -59,8 +63,8 @@
                     <!--Grid column-->
                     <div class="col-md-12">
 
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                        <div class="md-form p-0">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea" placeholder="Enter your message"></textarea>
                             <label for="message">Your message</label>
                         </div>
 
@@ -70,7 +74,7 @@
 
             </form>
 
-            <div class="text-center text-md-left">
+            <div class="text-center text-md-left p-0">
                 <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
             <div class="status"></div>
@@ -98,6 +102,7 @@
     </div>
 
 </section>
+@include('home.footer')
 <!--Section: Contact v.2-->
 </body>
 </html>
