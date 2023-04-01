@@ -13,9 +13,22 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+        <style>
+            .loginbackgrn{
+                background-image: url('https://img.freepik.com/free-photo/present-box-scissors-snags-letters_23-2147966098.jpg?size=626&ext=jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        
+            .font-sans {
+                /* Add any additional styling for the login container here */
+            }
+        </style>
+        
     </head>
     <body>
-        <div class="font-sans text-gray-900 antialiased">
+        <div class="font-sans text-gray-900 antialiased loginbackgrn" style="background-image: url('https://img.freepik.com/free-photo/present-box-scissors-snags-letters_23-2147966098.jpg?size=626&ext=jpg')">
             {{ $slot }}
         </div>
     </body>

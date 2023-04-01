@@ -17,6 +17,9 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/',[HomeController::class,'index']);
 
+Route::get('/', function () {
+    return view('home.homePage');
+})->name('homePage');
 
 Route::middleware([
     'auth:sanctum',
@@ -32,9 +35,6 @@ Route::get('/contact', function () {
     return view('home.contact');
 })->name('contactPage');
 
-// Route::get('/home', function () {
-//     return view('home');
-// })->name('homePage');
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 Route::get('/view_category',[AdminController::class,'view_category']);
