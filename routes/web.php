@@ -35,6 +35,10 @@ Route::get('/contact', function () {
     return view('home.contact');
 })->name('contactPage');
 
+Route::get('/cart', function () {
+    return view('home.cart');
+})->name('cartPage');
+
 
 Route::get('/redirect',[HomeController::class,'redirect']);
 Route::get('/view_category',[AdminController::class,'view_category']);

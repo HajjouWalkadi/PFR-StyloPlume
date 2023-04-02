@@ -26,8 +26,6 @@
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
 
-
-
       <!-- jQery -->
       <script src="home/js/jquery-3.4.1.min.js"></script>
       <!-- popper js -->
