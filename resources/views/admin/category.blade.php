@@ -61,7 +61,7 @@
 
           </div>
 
-          <table class="center">
+          {{-- <table class="center">
             <tr>
                 <td>Category name</td>
                 <td>Action</td>
@@ -78,7 +78,37 @@
 
             @endforeach
 
+          </table> --}}
+
+
+
+
+{{--  --}}
+
+          <table class="table table-dark table-hover table-striped">
+            <thead> 
+              <tr class="th_color">
+                  <th class="text-center" scope="col">Category name</th>
+                  <th class="text-center" scope="col">Action</th>
+              </tr>
+              </thead>
+              <tbody>
+
+                @foreach($data as $data)
+
+            <tr>
+                <td>{{$data->category_name}}</td>
+                <td>
+                  <a onclick="return confirm('Are You Sure To Delete This')" class="btn btn-danger" href="{{url('delete_category',$data->id)}}">Delete</a>
+                </td>
+            </tr>
+
+            @endforeach
+            </tbody>
           </table>
+          {{--  --}}
+
+
           </div>
         </div>
 
