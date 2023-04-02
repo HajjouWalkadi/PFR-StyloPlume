@@ -17,9 +17,9 @@ use App\Http\Controllers\AdminController;
 
 Route::get('/',[HomeController::class,'index']);
 
-Route::get('/', function () {
-    return view('home.homePage');
-})->name('homePage');
+// Route::get('/', function () {
+//     return view('home.homePage');
+// })->name('homePage');
 
 Route::middleware([
     'auth:sanctum',
