@@ -5,7 +5,7 @@
     {{-- <link rel="stylesheet" href="../../../public/home/css/style.css"> --}}
     @include('home.csshome')
 </head>
-<body style="background-color: beige">
+<body>
     @include('home.header')
 
 <section class="h-100 h-custom" style="background-color: #eee;">

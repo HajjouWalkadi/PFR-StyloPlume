@@ -37,7 +37,7 @@
                            </a>
                            <ul class="product-links">
                                <li><a href="#"><i class="fa fa-search"></i></a></li>
-                               <li><a href="#"><i class="fa fa-heart"></i></a></li>
+                               {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li> --}}
                                <li><a href="#"><i class="fa fa-random"></i></a></li>
                            </ul>
                            <a href="" class="add-to-cart">Add to Cart</a>

@@ -3,13 +3,13 @@
 <head>
 
     <style>
-        body {
-  /* background: #007bff; */
-  /* background: linear-gradient(to right, #0062E6, #33AEFF); */
-}
+        /* body {
+  background: #007bff;
+  background: linear-gradient(to right, #0062E6, #33AEFF);
+} */
 
 .bg-image {
-  background-image: url('https://i.pinimg.com/474x/a9/cc/44/a9cc44d3fcfdaa019e487d5c2384c644.jpg');
+  background-image: url('https://i.pinimg.com/474x/f6/a9/58/f6a958cc0bb5ea53db40b9cab1a7a0a7.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,7 +46,6 @@
               <div class="col-sm-6 p-4">
                 <div class="text-center">
                   <div class="h3 fw-light">Contact Form</div>
-                  <p class="mb-4 text-muted">Split layout contact form</p>
                 </div>
   
                 <!-- * * * * * * * * * * * * * *
