@@ -46,7 +46,7 @@
                   </div>     
                   <div class="col-md-5">
                      <div class="widget_menu">
-                        <h3>Newsletter</h3>
+                        <h3>Social media links</h3>
                         <div class="information_f">
                           <p>Subscribe by our newsletter and get update protidin.</p>
                         </div>

@@ -17,7 +17,7 @@
 
         @include('home.product')
 
-        @include('home.subscribe')
+        {{-- @include('home.subscribe') --}}
 
         @include('home.client')
 

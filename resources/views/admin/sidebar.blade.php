@@ -8,7 +8,7 @@
             <div class="profile-desc">
               <div class="profile-pic">
                 <div class="count-indicator">
-                  <img class="img-xs rounded-circle " src="admin/assets/images/faces/face15.jpg" alt="">
+                  <img class="img-xs rounded-circle " src="https://i.pinimg.com/474x/58/60/f0/5860f0fc26bd9dcf724bfbac832368fe.jpg" alt="">
                   <span class="count bg-success"></span>
                 </div>
                 <div class="profile-name">

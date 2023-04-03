@@ -8,7 +8,7 @@
             
 
             <div class="row">
-                @foreach($product as $product)
+                @foreach($product as $products)
                {{-- <div class="col-md-3 col-sm-6">
                    <div class="product-grid">
                        <div class="product-image">
@@ -33,8 +33,9 @@
                    <div class="product-grid">
                        <div class="product-image">
                            <a href="#" class="image">
-                               <img src="product/{{$product->image}}" alt="">
+                               <img src="product/{{$products->image}}" alt="">
                            </a>
+                           <span class="product-discount-label"></span>
                            <ul class="product-links">
                                <li><a href="#"><i class="fa fa-search"></i></a></li>
                                {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li> --}}
@@ -43,12 +44,28 @@
                            <a href="" class="add-to-cart">Add to Cart</a>
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="#">{{$product->title}}</a></h3>
-                           <div class="price">MAD {{$product->price}}</div>
+                           <h3 class="title"><a href="#">{{$products->title}}</a></h3>
+                           
+                           @if($products->discount_price!=null)
+
+                           <div style="color: red" class="discount_price">{{$products->discount_price}} MAD</div>
+
+                           <div style="text-decoration: line-through;" class="price">{{$products->price}} MAD</div>
+
+                           @else
+                           <div class="price">{{$products->price}} MAD</div>
+
+
+                           @endif
                        </div>
                    </div>
                </div>
                @endforeach
+               <span style="padding-top:20">
+
+               {!!$product->withQueryString()->links('pagination::bootstrap-5')!!}
+            </span>
+
                
            </div>
 
