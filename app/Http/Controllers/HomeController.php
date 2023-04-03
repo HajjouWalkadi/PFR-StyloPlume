@@ -13,7 +13,7 @@ class HomeController extends Controller
 
     public function index()
     { 
-        $product=Product::paginate(4);
+        $product=Product::paginate(10);
         return view('home.userpage',compact('product'));
 
     }
@@ -27,7 +27,18 @@ class HomeController extends Controller
             return view('admin.home');
         }
          else {
-            return view('home.userpage');
+            $product=Product::paginate(10);
+        return view('home.userpage',compact('product'));
          }
     }
+
+    public function product_details($id)
+    {
+        $product=Product::find($id);
+        return view('home.product_details',compact('product'));
+    }
+
+
+
+    
 }

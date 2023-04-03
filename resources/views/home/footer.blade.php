@@ -1,3 +1,14 @@
+<head>
+   <!-- Add the following links to the <head> section of your HTML code -->
+
+<!-- CSS link for Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+<!-- JavaScript link for Bootstrap Icons -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
+
+</head>
+
 <footer>
          <div class="container">
             <div class="row">
@@ -48,17 +59,13 @@
                      <div class="widget_menu">
                         <h3>Social media links</h3>
                         <div class="information_f">
-                          <p>Subscribe by our newsletter and get update protidin.</p>
+                          <p>Don't forget to check our social media.</p>
+                          <i class="bi bi-instagram"></i>
+                          <i class="bi bi-whatsapp"></i>
+                          <i class="bi bi-twitter"></i>
                         </div>
-                        <div class="form_sub">
-                           <form>
-                              <fieldset>
-                                 <div class="field">
-                                    <input type="email" placeholder="Enter Your Mail" name="email" />
-                                    <input type="submit" value="Subscribe" />
-                                 </div>
-                              </fieldset>
-                           </form>
+                        <div>
+                           <h5 style="font-size: 20px">www.styloplume.com</h5>
                         </div>
                      </div>
                   </div>

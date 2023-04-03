@@ -39,9 +39,12 @@
                            <ul class="product-links">
                                <li><a href="#"><i class="fa fa-search"></i></a></li>
                                {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li> --}}
-                               <li><a href="#"><i class="fa fa-random"></i></a></li>
+                               <li><a href="{{url('product_details',$products->id)}}"><i class="fa fa-eye"></i></a></li>
                            </ul>
+                           {{-- <a href="" class="add">View details</a> --}}
                            <a href="" class="add-to-cart">Add to Cart</a>
+                        
+                           
                        </div>
                        <div class="product-content">
                            <h3 class="title"><a href="#">{{$products->title}}</a></h3>
