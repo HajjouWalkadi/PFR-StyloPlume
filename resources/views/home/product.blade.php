@@ -43,8 +43,16 @@
                            </ul>
                            <form action="{{url('add_cart',$products->id)}}" method="POST">
                             @csrf
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <input type="submit" class="add-to-cart" style="width: 100vh" value="Add To Cart">
+
+                                </div>
+                                 
+                            </div>
                            {{-- <a href="" class="add">View details</a> --}}
-                           <a href="" class="add-to-cart">Add to Cart</a>
+                           {{-- <a href="{{url('add_cart',$products->id)}}" class="add-to-cart">Add to Cart</a> --}}
                            </form>
                            
                        </div>
