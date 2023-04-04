@@ -54,7 +54,11 @@
                                 @endif
 
                             </div>
+                            <form action="{{url('add_cart',$product->id)}}" method="Post">
+                                @csrf
+                            
                             <a href="" class="btn btn-primary">Add to Cart</a>
+                            </form>
                             {{-- <div class="mt-1 mb-1 spec-1"><span>{{$product->quantity}}</span></div> --}}
                             {{-- <div class="mt-1 mb-1 spec-1"><span>{{$product->category}}</span></div> --}}
                             {{-- <p class="text-justify text-truncate para mb-0">{{$product->description}}<br><br></p> --}}

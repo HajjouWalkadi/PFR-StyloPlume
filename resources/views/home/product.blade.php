@@ -41,9 +41,11 @@
                                {{-- <li><a href="#"><i class="fa fa-heart"></i></a></li> --}}
                                <li><a href="{{url('product_details',$products->id)}}"><i class="fa fa-eye"></i></a></li>
                            </ul>
+                           <form action="{{url('add_cart',$products->id)}}" method="POST">
+                            @csrf
                            {{-- <a href="" class="add">View details</a> --}}
                            <a href="" class="add-to-cart">Add to Cart</a>
-                        
+                           </form>
                            
                        </div>
                        <div class="product-content">

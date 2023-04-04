@@ -63,6 +63,8 @@
                           <i class="bi bi-instagram"></i>
                           <i class="bi bi-whatsapp"></i>
                           <i class="bi bi-twitter"></i>
+                          <i class="bi bi-linkedin"></i>
+                          <i class="bi bi-google"></i>
                         </div>
                         <div>
                            <h5 style="font-size: 20px">www.styloplume.com</h5>
