@@ -26,9 +26,6 @@
                 border-radius: 9px;
             }
         
-            .font-sans {
-                /* Add any additional styling for the login container here */
-            }
         </style>
         
     </head>
