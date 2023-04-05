@@ -46,7 +46,12 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="submit" class="add-to-cart" style="width: 100vh" value="Add To Cart">
+                                    <input type="number" name="quantity" class="add-to-cart" style="width: 100px" value="1" min="1">
+
+                                </div>
+
+                                <div class="col-md-4">
+                                    <input type="submit" class="add-to-cart" style="width: 50vh" value="Add To Cart">
 
                                 </div>
                                  
