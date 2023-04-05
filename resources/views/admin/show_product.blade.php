@@ -42,7 +42,11 @@
 
           <h2>All products</h2>
 
-          <table class="table table-dark table-hover table-striped">
+          <div class="overflow-scroll tab1 w-100" style="height:27rem; overflow-y: scroll;">
+            <table class="table table-dark table-hover table-striped">
+
+          {{-- <div class="overflow-scroll tab1 w-100" style="height:27rem;">   
+          <table class="table table-dark table-hover table-striped"> --}}
             <thead> 
               <tr class="th_color">
                   <th class="text-center" scope="col">Product title</th>
@@ -81,6 +85,7 @@
             @endforeach
             </tbody>
           </table>
+        </div>
 
     <!-- container-scroller -->
     <!-- plugins:js -->

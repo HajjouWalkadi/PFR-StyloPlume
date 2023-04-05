@@ -51,6 +51,8 @@ class HomeController extends Controller
             $cart=new cart;
             $cart->name=$user->name;
             $cart->email=$user->email;
+            $cart->phone=$user->phone;
+            $cart->address=$user->address;
             $cart->user_id=$user->id;
             $cart->product_title=$product->title;
             $cart->price=$product->price;

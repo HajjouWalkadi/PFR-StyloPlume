@@ -152,10 +152,38 @@
 							<span class="color green"></span>
 							<span class="color blue"></span>
 						</h5> --}}
-						<div class="action">
+                        
+						{{-- <div class="action">
 							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
-							{{-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> --}}
-						</div>
+						</div> --}}
+
+                        <!-- Quantity -->
+                        <h5><strong>Quantity:</strong></h5>
+                <div class="d-flex mb-4" style="max-width: 300px">
+                    <button class="btn btn-primary px-3 me-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                      {{-- <i class="fas fa-minus"></i> --}}
+                      <i class="bi bi-dash"></i>
+                    </button>
+  
+                    {{-- <h5><strong>Quantity:</strong></h5> --}}
+                    <div class="form-outline">
+                      <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                      {{-- <label class="form-label" for="form1">Quantity</label> --}}
+                    </div>
+  
+                    <button class="btn btn-primary px-3 ms-2"
+                      onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                      {{-- <i class="fas fa-plus"></i> --}}
+                      <i class="bi bi-plus"></i>
+                    </button>
+                  </div>
+                  <!-- Quantity -->
+
+                  <div class="action">
+                    <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                    {{-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> --}}
+                </div>
 					</div>
 				</div>
 			</div>
