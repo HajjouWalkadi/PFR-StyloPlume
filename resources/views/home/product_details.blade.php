@@ -139,7 +139,7 @@
                             @endif
 
                         </div>
-						<p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p>
+						{{-- <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p> --}}
                         <h5><strong>Category:</strong> {{$product->category}}</h5>
 						{{-- <h5 class="sizes">sizes:
 							<span class="size" data-toggle="tooltip" title="small">s</span>
