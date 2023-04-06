@@ -2,7 +2,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Our <span>products</span>
+                  Our <span>Items</span>
                </h2>
             </div>
             
@@ -30,7 +30,7 @@
                    </div>
                </div> --}}
                <div class="col-md-3 col-sm-6">
-                   <div class="product-grid">
+                   <div class="product-grid mt-4">
                        <div class="product-image">
                            <a href="#" class="image">
                                <img src="product/{{$products->image}}" alt="">
@@ -46,7 +46,7 @@
 
                             <div class="row">
                                 <div class="col-md-4">
-                                    <input type="number" name="quantity" class="add-to-cart" style="width: 100px" value="1" min="1">
+                                    <input type="number" name="quantity" class="add-to-cart" style="width: 18vh" value="1" min="1">
 
                                 </div>
 

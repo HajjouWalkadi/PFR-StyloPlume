@@ -230,3 +230,5 @@
       </div>
     </div>
   </section>
+  @include('home.footer')
+</body>
