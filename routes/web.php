@@ -61,6 +61,9 @@ Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
 
 Route::get('/cart',[HomeController::class,'cart']);
 
+Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
+
+
 
 
 

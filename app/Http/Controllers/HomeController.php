@@ -79,10 +79,19 @@ class HomeController extends Controller
     public function cart()
     {
 
-        $id=Auth::user()->id;
-        $carts = Cart::where('user_id', '=', $id)->get();
-        // $carts=Cart::All();
-        return view('home.cart',['carts'=>$carts]);
+        if(Auth::id())
+        {
+
+            $id=Auth::user()->id;
+            $carts = Cart::where('user_id', '=', $id)->get();
+            // $carts=Cart::All();
+            return view('home.cart',['carts'=>$carts]);
+        }
+
+        else{
+            return redirect('login');
+        }
+       
     }
 
     

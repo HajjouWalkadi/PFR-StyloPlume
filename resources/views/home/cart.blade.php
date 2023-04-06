@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- CSS link for Bootstrap Icons -->
+  {{-- <!-- CSS link for Bootstrap Icons -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
 <!-- JavaScript link for Bootstrap Icons -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script> --}}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" ></script>
+
 
     {{-- <link rel="stylesheet" href="../../../public/contact/main.css"> --}}
     {{-- <link rel="stylesheet" href="../../../public/home/css/style.css"> --}}
@@ -39,35 +43,6 @@
                     </div> --}}
                   </div>
 
-                  {{-- @foreach($cart as $cart) --}}
-  
-                  {{-- <div class="card mb-3">
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                          <div>
-                            <img
-                              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-shopping-carts/img1.webp"
-                              class="img-fluid rounded-3" alt="Shopping item" style="width: 65px;">
-                          </div>
-                          <div class="ms-3">
-                            <h5>title</h5>
-                            <p class="small mb-0">256GB, Navy Blue</p>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center">
-                          <div style="width: 50px;">
-                            <h5 class="fw-normal mb-0">2</h5>
-                          </div>
-                          <div style="width: 80px;">
-                            <h5 class="mb-0">$900</h5>
-                          </div>
-                          <a href="#!" style="color: #cecece;"><i class="fas fa-trash-alt"></i></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div> --}}
-  
                 @foreach($carts as $cart)
                       <div class="card mb-3">
                         <div class="card-body">
@@ -85,24 +60,19 @@
                                 <h5 class="fw-normal mb-0">{{ $cart->quantity }}</h5>
                               </div>
                               <div style="width: 80px;">
-                                <h5 class="mb-0">${{ $cart->price }}</h5>
+                                <h5 class="mb-0">{{ $cart->price }} MAD</h5>
                               </div>
-                              <a href="" style="color: #080707;"><i class="bi bi-trash-fill"></i></a>
+                              <a href="{{url('retire_cart',$cart->id)}}" ><i class="bi bi-trash-fill"></i></a>
                             </div>
                           </div>
                         </div>
                       </div>
+
+                     
                       @endforeach
-                                        
+                     
 
-                  {{-- @endforeach --}}
-
-
-
-
-
-
-
+                    
 
   
                 </div>
@@ -157,11 +127,18 @@
   
                       </form>
   
+                      <?php $totalprice = 0; ?>
+                      @foreach($carts as $cart)
+                          <?php $totalprice = $totalprice + $cart->price; ?>
+                      @endforeach
+                      
+
+                      
                       <hr class="my-4">
   
                       <div class="d-flex justify-content-between">
                         <p class="mb-2">Subtotal</p>
-                        <p class="mb-2">$4798.00</p>
+                        <p class="mb-2">2222</p>
                       </div>
   
                       <div class="d-flex justify-content-between">
@@ -171,12 +148,12 @@
   
                       <div class="d-flex justify-content-between mb-4">
                         <p class="mb-2">Total(Incl. taxes)</p>
-                        <p class="mb-2">$4818.00</p>
+                        <p class="mb-2">{{$totalprice}} MAD</p>
                       </div>
   
                       <button type="button" class="btn btn-info btn-block btn-lg">
                         <div class="d-flex justify-content-between">
-                          <span>$4818.00</span>
+                          <span>{{$totalprice}} MAD</span>
                           <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
                         </div>
                       </button>
