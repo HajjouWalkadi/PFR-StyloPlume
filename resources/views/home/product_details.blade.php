@@ -26,59 +26,19 @@
       <div class="hero_area">
          <!-- header section strats -->
          @include('home.header')
-         <!-- end header section -->
-
-         {{-- <div class="container mt-5 mb-5">
-            <div class="d-flex justify-content-center row">
-                <div class="col-md-10">
-                    <div class="row p-2 bg-white border rounded mt-2">
-                        <div class="col-md-3 mt-5 w-15"><img class="img-fluid img-responsive rounded product-image" src="product/{{$product->image}}"></div>
-                        <div class="col-md-6 mt-1">
-                            <h5>{{$product->title}}</h5>
-                            <div class="d-flex flex-row">
-                                <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>310</span>
-                            </div>
-                            <p class="text-justify  mb-0">Product details: {{$product->description}}<br><br></p>
-                            <div class="mt-1 mb-1 spec-1"><span>Product category: {{$product->category}}</span></div>
-                            <div class="mt-1 mb-1 spec-1"><span style="font-weight: bold">Available quantity: {{$product->quantity}}</span></div>
-
-                            <div class="d-flex flex-row">
-                                @if($product->discount_price!=null)
-
-                                <div style="color: red" class="discount_price">Price: {{$product->discount_price}} MAD</div>
-
-                                <div style="text-decoration: line-through;" class="price">{{$product->price}} MAD</div>
-
-                                @else
-                                <div class="price">Price: {{$product->price}} MAD</div>
-
-
-                                @endif
-
-                            </div>
-                            <form action="{{url('add_cart',$product->id)}}" method="Post">
-                                @csrf
-                            
-                            <a href="" class="btn btn-primary">Add to Cart</a>
-                            </form>
-                            
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div> --}}
+    
       
 
+        
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
   <head>
-    
+     --}}
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>eCommerce Product Detail</title>
@@ -139,23 +99,8 @@
                             @endif
 
                         </div>
-						{{-- <p class="vote"><strong>91%</strong> of buyers enjoyed this product! <strong>(87 votes)</strong></p> --}}
                         <h5><strong>Category:</strong> {{$product->category}}</h5>
-						{{-- <h5 class="sizes">sizes:
-							<span class="size" data-toggle="tooltip" title="small">s</span>
-							<span class="size" data-toggle="tooltip" title="medium">m</span>
-							<span class="size" data-toggle="tooltip" title="large">l</span>
-							<span class="size" data-toggle="tooltip" title="xtra large">xl</span>
-						</h5> --}}
-						{{-- <h5 class="colors">colors:
-							<span class="color orange not-available" data-toggle="tooltip" title="Not In store"></span>
-							<span class="color green"></span>
-							<span class="color blue"></span>
-						</h5> --}}
-                        
-						{{-- <div class="action">
-							<button class="add-to-cart btn btn-default" type="button">add to cart</button>
-						</div> --}}
+						
 
                         <!-- Quantity -->
                         <h5><strong>Quantity:</strong></h5>
