@@ -36,9 +36,9 @@ Route::get('/contact', function () {
     return view('home.contact');
 })->name('contactPage');
 
-Route::get('/cart', function () {
-    return view('home.cart');
-})->name('cartPage');
+// Route::get('/cart', function () {
+//     return view('home.cart');
+// })->name('cartPage');
 
 
 
@@ -58,6 +58,9 @@ Route::post('/update_product_confirm/{id}',[ProductController::class,'update_pro
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
 Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
+
+Route::get('/cart',[HomeController::class,'cart']);
+
 
 
 

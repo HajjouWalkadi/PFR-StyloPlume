@@ -14,7 +14,7 @@
                        <li class="nav-item dropdown">
                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
                            <ul class="dropdown-menu">
-                              <li><a href="{{route('cartPage')}}">About</a></li>
+                              <li><a href="">About</a></li>
                            </ul>
                         </li>
                         <li class="nav-item">
@@ -26,9 +26,13 @@
                         <li class="nav-item">
                            <a class="nav-link" href="{{route('contactPage')}}">Contact</a>
                         </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="{{url('cart')}}"><i class="bi bi-cart-fill"></i></a>
+                        </li>
                         <form class="form-inline">
                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                           <i class="fa fa-search" aria-hidden="true"></i>
+                           {{-- <i class="fa fa-search" aria-hidden="true"></i> --}}
+                           <i class="bi bi-search"></i>
                            </button>
                         </form>
 
