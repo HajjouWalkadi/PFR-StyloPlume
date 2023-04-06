@@ -62,7 +62,7 @@
                               <div style="width: 80px;">
                                 <h5 class="mb-0">{{ $cart->price }} MAD</h5>
                               </div>
-                              <a href="{{url('retire_cart',$cart->id)}}" ><i class="bi bi-trash-fill"></i></a>
+                              <a onclick="return confirm('Are you sure to retire this product?')" href="{{url('retire_cart',$cart->id)}}" ><i class="bi bi-trash-fill"></i></a>
                             </div>
                           </div>
                         </div>
