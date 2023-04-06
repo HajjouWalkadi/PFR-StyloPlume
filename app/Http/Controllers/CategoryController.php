@@ -13,4 +13,13 @@ class CategoryController extends Controller
         return view('admin.category',compact('data'));
     }
     
+    public function add_category(Request $request)
+    {
+        $data=new category;
+        $data->category_name=$request->category;
+
+        $data->save();
+
+        return redirect()->back()->with('message','Category Added Successfully');
+    }
 }
