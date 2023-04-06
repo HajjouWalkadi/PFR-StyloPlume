@@ -159,29 +159,48 @@
 
                         <!-- Quantity -->
                         <h5><strong>Quantity:</strong></h5>
-                <div class="d-flex mb-4" style="max-width: 300px">
-                    <button class="btn btn-primary px-3 me-2"
+                {{-- <div class="d-flex mb-4" style="max-width: 300px"> --}}
+                    {{-- <button class="btn btn-primary px-3 me-2"
                       onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
-                      {{-- <i class="fas fa-minus"></i> --}}
                       <i class="bi bi-dash"></i>
-                    </button>
-  
-                    {{-- <h5><strong>Quantity:</strong></h5> --}}
-                    <div class="form-outline">
-                      <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control" />
+                    </button> --}}
+                    {{-- <div class="form-outline"> --}}
+                      {{-- <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control" /> --}}
                       {{-- <label class="form-label" for="form1">Quantity</label> --}}
-                    </div>
+                    {{-- </div> --}}
   
-                    <button class="btn btn-primary px-3 ms-2"
+                    {{-- <button class="btn btn-primary px-3 ms-2"
                       onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
-                      {{-- <i class="fas fa-plus"></i> --}}
                       <i class="bi bi-plus"></i>
-                    </button>
-                  </div>
+                    </button> --}}
+                  {{-- </div> --}}
                   <!-- Quantity -->
 
                   <div class="action">
-                    <button class="add-to-cart btn btn-default" type="button">add to cart</button>
+                    <form action="{{url('add_cart',$product->id)}}" method="POST">
+                      @csrf
+
+                      <div class="row">
+                          <div class="col-md-4">
+                            <div class="form-outline">
+                              <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control" />
+                            </div>
+                              {{-- <input type="number" name="quantity" class="add-to-cart" style="width: 18vh" value="1" min="1"> --}}
+
+                          </div>
+                          
+
+                          <div class="col-md-4">
+                            <button class="add-to-cart btn btn-default" type="submit">add to cart</button>
+                              {{-- <input type="submit" class="add-to-cart" style="width: 50vh" value="Add To Cart"> --}}
+
+                          </div>
+                           
+                      </div>
+                     {{-- <a href="" class="add">View details</a> --}}
+                     {{-- <a href="{{url('add_cart',$products->id)}}" class="add-to-cart">Add to Cart</a> --}}
+                     </form>
+                    
                     {{-- <button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button> --}}
                 </div>
 					</div>
