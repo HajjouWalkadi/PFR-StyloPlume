@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 
@@ -48,13 +47,13 @@ Route::get('/view_category',[CategoryController::class,'view_category']);
 Route::post ('/add_category',[CategoryController::class,'add_category']);
 
 Route::get ('/delete_category/{id}',[CategoryController::class,'delete_category']); 
-Route::get('/view_product',[AdminController::class,'view_product']);
-Route::post ('/add_product',[AdminController::class,'add_product']);
+Route::get('/view_product',[ProductController::class,'view_product']);
+Route::post ('/add_product',[ProductController::class,'add_product']);
 
-Route::get('/show_product',[AdminController::class,'show_product']);
-Route::get('/delete_product/{id}',[AdminController::class,'delete_product']);
-Route::get('/update_product/{id}',[AdminController::class,'update_product']);
-Route::post('/update_product_confirm/{id}',[AdminController::class,'update_product_confirm']);
+Route::get('/show_product',[ProductController::class,'show_product']);
+Route::get('/delete_product/{id}',[ProductController::class,'delete_product']);
+Route::get('/update_product/{id}',[ProductController::class,'update_product']);
+Route::post('/update_product_confirm/{id}',[ProductController::class,'update_product_confirm']);
 
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 

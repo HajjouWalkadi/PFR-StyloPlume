@@ -33,84 +33,84 @@ class AdminController extends Controller
          
     // }
 
-    public function view_product()
-    {
-        $category=Category::all();
-        return view('admin.product',compact('category'));
-    }
+    // public function view_product()
+    // {
+    //     $category=Category::all();
+    //     return view('admin.product',compact('category'));
+    // }
 
-    public function add_product(Request $request) 
-    {
-        $product=new product;
-        $product->title=$request->title;
-        $product->description=$request->description;
-        $product->price=$request->price;
-        $product->quantity=$request->quantity;
-        $product->discount_price=$request->discount_price;
-        $product->category=$request->category;
+    // public function add_product(Request $request) 
+    // {
+    //     $product=new product;
+    //     $product->title=$request->title;
+    //     $product->description=$request->description;
+    //     $product->price=$request->price;
+    //     $product->quantity=$request->quantity;
+    //     $product->discount_price=$request->discount_price;
+    //     $product->category=$request->category;
 
-        $image = $request->image;
-        $imagename = time().'.'.$image->getClientOriginalExtension();
-        $request->image->move('product',$imagename);
-        $product->image=$imagename;
+    //     $image = $request->image;
+    //     $imagename = time().'.'.$image->getClientOriginalExtension();
+    //     $request->image->move('product',$imagename);
+    //     $product->image=$imagename;
 
 
-        $product->save();
+    //     $product->save();
         
-        return redirect()->back()->with('message','Product Added Successfully');
+    //     return redirect()->back()->with('message','Product Added Successfully');
 
-    }
+    // }
 
-    public function show_product()
-    {
-        $product= Product::all();
-        return view('admin.show_product',compact('product'));
-    }
+    // public function show_product()
+    // {
+    //     $product= Product::all();
+    //     return view('admin.show_product',compact('product'));
+    // }
 
-    public function delete_product($id)
-    {
-      $product = Product::find($id); 
+    // public function delete_product($id)
+    // {
+    //   $product = Product::find($id); 
 
-      $product->delete();
+    //   $product->delete();
 
-      return redirect()->back()->with('message','product deleted successfully');
-    }
+    //   return redirect()->back()->with('message','product deleted successfully');
+    // }
 
-    public function update_product($id)
-    {
-        $product=Product::find($id);
-        $category=Category::all();
+    // public function update_product($id)
+    // {
+    //     $product=Product::find($id);
+    //     $category=Category::all();
         
-        return view('admin.update_product',compact('product','category'));
-    }
+    //     return view('admin.update_product',compact('product','category'));
+    // }
 
-    public function update_product_confirm(Request $request,$id)
-    {
-        $product=Product::find($id);
+    // public function update_product_confirm(Request $request,$id)
+    // {
+    //     $product=Product::find($id);
 
-        $product->title=$request->title;
-        $product->description=$request->description;
-        $product->price=$request->price;
-        $product->discount_price=$request->discount_price;
-        $product->category=$request->category;
-        $product->quantity=$request->quantity;
+    //     $product->title=$request->title;
+    //     $product->description=$request->description;
+    //     $product->price=$request->price;
+    //     $product->discount_price=$request->discount_price;
+    //     $product->category=$request->category;
+    //     $product->quantity=$request->quantity;
 
-        $image=$request->image;
-        if($image){
+    //     $image=$request->image;
+    //     if($image){
 
-            $imagename=time().'.'.$image->getClientOriginalExtension();
-            $request->image->move('product',$imagename);
-            $product->image=$imagename;
+    //         $imagename=time().'.'.$image->getClientOriginalExtension();
+    //         $request->image->move('product',$imagename);
+    //         $product->image=$imagename;
 
-        }
+    //     }
         
 
-        $product->save();
+    //     $product->save();
 
-        return redirect()->back()->with('message','Product updated successfully');
+    //     return redirect()->back()->with('message','Product updated successfully');
 
 
-    }
+    // }
 
 }
  
