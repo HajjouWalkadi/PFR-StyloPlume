@@ -23,12 +23,17 @@
                         <li class="nav-item">
                            <a class="nav-link" href="blog_list.html">About</a>
                         </li>
+
                         <li class="nav-item">
                            <a class="nav-link" href="{{route('contactPage')}}">Contact</a>
                         </li>
+
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('cart')}}"><i class="bi bi-cart-fill"></i></a>
                         </li>
+                        
+
+
                         <form class="form-inline">
                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
                            {{-- <i class="fa fa-search" aria-hidden="true"></i> --}}

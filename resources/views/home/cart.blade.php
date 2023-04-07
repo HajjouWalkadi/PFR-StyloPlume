@@ -84,7 +84,11 @@
 
                      
                       @endforeach
-                     
+                      <?php $totalprice = 0; ?>
+                      @foreach($carts as $cart)
+                          <?php $totalprice = $totalprice + $cart->price; ?>
+                      @endforeach
+                      {{-- <h1> total: {{$totalprice}}</h1> --}}
 
                       <button type="button" class="btn btn-info btn-block btn-lg">
                         <div class="d-flex justify-content-between">
@@ -94,14 +98,14 @@
 
                       
                       <button type="button" id="payment" class="btn btn-info btn-block btn-lg text-left">
-                          Payment <i class="bi bi-credit-card"></i>
+                         <a href="{{url('stripe',$totalprice)}}"> Payment By Card <i class="bi bi-credit-card"></i></a>
                       </button>
 
   
                 </div>
                 <div class="col-lg-5">
   
-                  <div id="cardForm" class="card bg-secondary text-white rounded-3 d-none">
+                  <div id="cardForm" class="card bg-secondary text-white rounded-3">
                     <div class="card-body">
 
                       {{-- <button type="button" class="btn btn-info btn-block btn-lg">
@@ -114,12 +118,12 @@
 
 
                       <div class="d-flex justify-content-between align-items-center mb-4 ">
-                        <h5 class="mb-0">Card details</h5>
+                        <h5 class="mb-0">Amount</h5>
                         {{-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
                           class="img-fluid rounded-3" style="width: 45px;" alt="Avatar"> --}}
                       </div>
   
-                      <p class="small mb-2">Card type</p>
+                      {{-- <p class="small mb-2">Card type</p>
                       <a href="#!" type="submit" class="text-white"><i
                           class="fab fa-cc-mastercard fa-2x me-2"></i></a>
                       <a href="#!" type="submit" class="text-white"><i
@@ -158,7 +162,7 @@
                           </div>
                         </div>
   
-                      </form>
+                      </form> --}}
   
                       <?php $totalprice = 0; ?>
                       @foreach($carts as $cart)
@@ -184,12 +188,12 @@
                         <p class="mb-2">{{$totalprice}} MAD</p>
                       </div>
   
-                      <button type="button" class="btn btn-info btn-block btn-lg">
+                      {{-- <button type="button" class="btn btn-info btn-block btn-lg">
                         <div class="d-flex justify-content-between">
                           <span>{{$totalprice}} MAD</span>
                           <span>Checkout <i class="fas fa-long-arrow-alt-right ms-2"></i></span>
                         </div>
-                      </button>
+                      </button> --}}
   
                     </div>
                   </div>
@@ -219,11 +223,16 @@
  <script src="home/js/custom.js"></script>
 </body>
 
-<script>
+
+
+
+
+
+{{-- <script>
   let payment = document.getElementById('payment')
   let cardForm = document.getElementById('cardForm')
   payment.addEventListener('click', function() {
     cardForm.classList.add('d-flex')
   })
 
-</script>
+</script> --}}
