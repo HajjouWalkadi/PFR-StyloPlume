@@ -18,7 +18,21 @@
 <body>
     @include('home.header')
 
+
+    
+
 <section class="h-100 h-custom" style="background-color: #eee;">
+
+  @if(session()->has('message'))
+
+          <div class="alert alert-success">
+
+             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+            {{session()->get('message')}}
+          </div>
+
+          @endif
+
     <div class="container py-5 h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col">
@@ -74,15 +88,20 @@
 
                       <button type="button" class="btn btn-info btn-block btn-lg">
                         <div class="d-flex justify-content-between">
-                          <span>Cash On Delivery <i class="bi bi-truck"></i></span>
+                          <a href="{{url('cash_order')}}"><span>Cash On Delivery <i class="bi bi-truck"></i></span></a>
                         </div>
+                      </button>
+
+                      
+                      <button type="button" id="payment" class="btn btn-info btn-block btn-lg text-left">
+                          Payment <i class="bi bi-credit-card"></i>
                       </button>
 
   
                 </div>
                 <div class="col-lg-5">
   
-                  <div class="card bg-secondary text-white rounded-3">
+                  <div id="cardForm" class="card bg-secondary text-white rounded-3 d-none">
                     <div class="card-body">
 
                       {{-- <button type="button" class="btn btn-info btn-block btn-lg">
@@ -94,7 +113,7 @@
 
 
 
-                      <div class="d-flex justify-content-between align-items-center mb-4">
+                      <div class="d-flex justify-content-between align-items-center mb-4 ">
                         <h5 class="mb-0">Card details</h5>
                         {{-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
                           class="img-fluid rounded-3" style="width: 45px;" alt="Avatar"> --}}
@@ -199,3 +218,12 @@
  <!-- custom js -->
  <script src="home/js/custom.js"></script>
 </body>
+
+<script>
+  let payment = document.getElementById('payment')
+  let cardForm = document.getElementById('cardForm')
+  payment.addEventListener('click', function() {
+    cardForm.classList.add('d-flex')
+  })
+
+</script>

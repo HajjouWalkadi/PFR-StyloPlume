@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/southernsky');
+@import url('https://fonts.cdnfonts.com/css/adorable');
+
 
 #logincss{
   margin-right: 10px;
@@ -127,7 +130,7 @@ a:focus {
 }
 
 .header_section {
-    padding: 15px 0;
+    padding: 8px 0;
 }
 
 .header_section .container-fluid {
@@ -136,7 +139,8 @@ a:focus {
 }
 
 .navbar-brand {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Southernsky', sans-serif;
+  font-size: 2rem;
 }
 
 .navbar-brand span {
@@ -161,7 +165,7 @@ a:focus {
     border-radius: 5px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
-    font-weight: 700;
+    font-weight: 200;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link svg {
@@ -1413,7 +1417,7 @@ img {
 /* fiiiiiiiiiiiiiiiiiiinnnnnnnnn */
 
 /* whyyyyyyy */
-head, body{background-color: lightcyan}.card{cursor: pointer}.hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
+head, body{background-color: rgb(234, 250, 250)}.card{cursor: pointer}.hd{font-size: 25px;font-weight: 550}.card.hover, .card:hover{box-shadow: 0 20px 40px rgba(0, 0, 0, .2)}.img{margin-bottom: 35px;-webkit-filter: drop-shadow(5px 5px 5px #222);filter: drop-shadow(5px 5px 5px #222)}.card-title{font-weight: 600}button.focus, button:focus{outline: 0;box-shadow: none !important}.ft{margin-top: 25px}.chk{margin-bottom: 5px}.rck{margin-top: 20px;padding-bottom: 15px}
 /* fiiiinnn */
 http://kute-themes.com/html/boutique/html/index.html
 https://template.hasthemes.com/noraure/noraure/index.html

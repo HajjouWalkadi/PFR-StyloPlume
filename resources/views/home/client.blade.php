@@ -100,7 +100,7 @@
                            
                            <div class="user-content">
                                
-                               <h5 class="mb-0">Bruce Hardy</h5>
+                               <h5 class="mb-0" style="font-family: 'Adorable', sans-serif; font-size:2rem">Bruce Hardy</h5>
                                <span>Software Developer</span>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                
@@ -129,7 +129,7 @@
                            
                            <div class="user-content">
                                
-                               <h5 class="mb-0">Mark Smith</h5>
+                               <h5 class="mb-0" style="font-family: 'Adorable', sans-serif; font-size:2rem">Mark Smith</h5>
                                <span>Web Developer</span>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                
@@ -160,7 +160,7 @@
                            
                            <div class="user-content">
                                
-                               <h5 class="mb-0">Veera  Duncan</h5>
+                               <h5 class="mb-0" style="font-family: 'Adorable', sans-serif; font-size:2rem">Veera  Duncan</h5>
                                <span>Software Architect</span>
                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                
