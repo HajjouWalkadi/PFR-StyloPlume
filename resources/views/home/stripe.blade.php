@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Laravel 9 - Stripe Payment Gateway Integration Example - ItSolutionStuff.com</title>
+    <base href="/public">
+    <link rel="shortcut icon" href="images/favicon.png" type="">
+      <title>Stylo Plume</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="home/css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="home/css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="home/css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    @include('home.csshome')
 </head>
 <body>
+    <div class="hero_area">
+        @include('home.header')
     
 <div class="container">
     
-  <h3>Payment by card - Total Amount {{$totalprice}} MAD</h3> 
+  {{-- <h3>Payment by card - Total Amount {{$totalprice}} MAD</h3>  --}}
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default credit-card-box">
+                <div class="panel-heading display-table" style="background-color:#AC7088" >
+                        <h3 class="panel-title" style="text-align:center" >Total Amount {{$totalprice}} MAD</h3>
+                </div>
                 <div class="panel-heading display-table" >
                         <h3 class="panel-title" >Payment Details</h3>
                 </div>
@@ -43,7 +60,7 @@
                         </div>
     
                         <div class='form-row row'>
-                            <div class='col-xs-12 form-group card required'>
+                            <div class='col-xs-12 form-group required'>
                                 <label class='control-label'>Card Number</label> <input
                                     autocomplete='off' class='form-control card-number' size='20'
                                     type='text'>
@@ -77,7 +94,9 @@
     
                         <div class="row">
                             <div class="col-xs-12">
-                                <button class="btn btn-primary btn-lg btn-block" type="submit">Pay Now</button>
+                                <button class="btn btn-primary btn-lg btn-block" style="color:black" type="submit">Pay Now</button>
+                                {{-- <button  type="submit">Pay Now</button> --}}
+                                {{-- <input style="btn-lg btn-block" type="submit" name="" value="Pay now"> --}}
                             </div>
                         </div>
                             
@@ -88,6 +107,21 @@
     </div>
         
 </div>
+
+
+@include('home.footer')
+      <!-- footer end -->
+      <div class="cpy_">
+         <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
+      </div>
+      <!-- jQery -->
+      <script src="home/js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="home/js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="home/js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="home/js/custom.js"></script>
     
 </body>
     
