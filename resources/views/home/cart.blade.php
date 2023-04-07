@@ -72,7 +72,11 @@
                       @endforeach
                      
 
-                    
+                      <button type="button" class="btn btn-info btn-block btn-lg">
+                        <div class="d-flex justify-content-between">
+                          <span>Cash On Delivery <i class="bi bi-truck"></i></span>
+                        </div>
+                      </button>
 
   
                 </div>
@@ -80,10 +84,20 @@
   
                   <div class="card bg-secondary text-white rounded-3">
                     <div class="card-body">
+
+                      {{-- <button type="button" class="btn btn-info btn-block btn-lg">
+                        <div class="d-flex justify-content-between">
+                          <span>Cash On Delivery <i class="bi bi-truck"></i></span>
+                        </div>
+                      </button> --}}
+
+
+
+
                       <div class="d-flex justify-content-between align-items-center mb-4">
                         <h5 class="mb-0">Card details</h5>
-                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
-                          class="img-fluid rounded-3" style="width: 45px;" alt="Avatar">
+                        {{-- <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/avatar-6.webp"
+                          class="img-fluid rounded-3" style="width: 45px;" alt="Avatar"> --}}
                       </div>
   
                       <p class="small mb-2">Card type</p>
