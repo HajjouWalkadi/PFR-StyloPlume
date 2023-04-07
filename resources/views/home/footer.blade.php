@@ -14,12 +14,12 @@
             <div class="row">
                <div class="col-md-4">
                    <div class="full">
-                      <div class="logo_footer">
-                        <a href="#">Stylo Plume</a>
+                      <div class="logo_footer" style="font-family: 'Southernsky', sans-serif">
+                        <a style="color:black; font-size:2rem" href="#">Stylo Plume</a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 28 White tower, Street Name New York City, USA</p>
-                        <p><strong>TELEPHONE:</strong> +212 6 146 729 84</p>
+                        <p><strong>ADDRESS:</strong> 84 avenue Hassan II, Marrakech City, MAROC</p>
+                        <p><strong>TELEPHONE:</strong> +212 614 67 29 84</p>
                         <p><strong>EMAIL:</strong> styloplume@gmail.com</p>
                       </div>
                    </div>
@@ -35,8 +35,7 @@
                            <li><a href="#">Home</a></li>
                            <li><a href="#">About</a></li>
                            <li><a href="#">Services</a></li>
-                           <li><a href="#">Blog</a></li>
-                           <li><a href="#">Contact</a></li>
+                           <li><a href="{{route('contactPage')}}">Contact</a></li>
                         </ul>
                      </div>
                   </div>
@@ -45,11 +44,10 @@
                         <h3>Account</h3>
                         <ul>
                            <li><a href="#">Account</a></li>
-                           <li><a href="#">Checkout</a></li>
+                           <li><a href="{{url('cart')}}">Checkout</a></li>
                            <li><a href="#">Login</a></li>
                            <li><a href="#">Register</a></li>
                            <li><a href="#">Shopping</a></li>
-                           <li><a href="#">Widget</a></li>
                         </ul>
                      </div>
                   </div>

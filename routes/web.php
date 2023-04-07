@@ -36,6 +36,11 @@ Route::get('/contact', function () {
     return view('home.contact');
 })->name('contactPage');
 
+// Route::get('/products', function () {
+//     return view('home.products');
+// })->name('productPage');
+
+
 // Route::get('/cart', function () {
 //     return view('home.cart');
 // })->name('cartPage');
