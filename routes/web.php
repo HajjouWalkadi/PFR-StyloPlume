@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -60,6 +61,25 @@ Route::get('/show_product',[ProductController::class,'show_product']);
 Route::get('/delete_product/{id}',[ProductController::class,'delete_product']);
 Route::get('/update_product/{id}',[ProductController::class,'update_product']);
 Route::post('/update_product_confirm/{id}',[ProductController::class,'update_product_confirm']);
+
+
+Route::get('/order',[OrderController::class,'order']);
+
+Route::get('/delivered/{id}',[OrderController::class,'delivered']);
+// Route::get('/paid/{id}',[OrderController::class,'payment']);
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
