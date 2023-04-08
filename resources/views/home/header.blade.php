@@ -18,7 +18,7 @@
                            </ul>
                         </li> --}}
                         <li class="nav-item">
-                           <a class="nav-link" href="product.html">Products</a>
+                           <a class="nav-link" href="{{route('get_product')}}">Products</a>
                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="blog_list.html">About</a>
@@ -35,7 +35,7 @@
 
 
                         <form class="form-inline">
-                           <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                           <button class="btn  my-2 my-sm-0 nav_search-btn" style="font-size: 15px" type="submit">
                            {{-- <i class="fa fa-search" aria-hidden="true"></i> --}}
                            <i class="bi bi-search"></i>
                            </button>

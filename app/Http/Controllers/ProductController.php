@@ -8,6 +8,11 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
+    public  function index(){
+        // dd('hi hajjou');
+        $product = Product::all();  
+        return view('home.product', ['product'=>$product]);
+    }
     public function view_product()
     {
         $category=Category::all();

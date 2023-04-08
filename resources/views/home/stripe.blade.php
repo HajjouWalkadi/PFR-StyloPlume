@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="hero_area">
-        @include('home.header')
+        <span style="font-size: 15px">@include('home.header')</span>
     
 <div class="container">
     

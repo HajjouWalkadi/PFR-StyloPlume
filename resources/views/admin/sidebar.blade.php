@@ -65,6 +65,15 @@
             </a>
           </li>
           <li class="nav-item menu-items">
+            <a class="nav-link" href="index.html">
+              <span class="menu-icon">
+                {{-- <i class="bi bi-house-door"></i> --}}
+                <i class="mdi mdi-home"></i>
+              </span>
+              <span class="menu-title">Home</span>
+            </a>
+          </li>
+          <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-icon">
                 <i class="mdi mdi-laptop"></i>

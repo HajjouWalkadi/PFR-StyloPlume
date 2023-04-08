@@ -19,7 +19,7 @@ class HomeController extends Controller
 
     public function index()
     { 
-        $product=Product::paginate(10);
+        $product=Product::paginate(8);
         return view('home.userpage',compact('product'));
 
     }
@@ -43,6 +43,35 @@ class HomeController extends Controller
         $product=Product::find($id);
         return view('home.product_details',compact('product'));
     }
+
+    // public function all_products($id)
+    // {
+    //     $product=Product::all($id);
+    //     return view('home.all_products',compact('product'));
+    // }
+
+
+    public function all_products()
+    {
+        $products = Product::all();
+        return view('home.all_products', compact('products'));
+    }
+
+// public function all_products()
+// {
+//     try {
+//         $product = Product::all();
+//         return view('home.all_products', compact('product'));
+//     } catch (\Exception $e) {
+//         dd($e->getMessage());
+//     }
+// }
+
+
+
+
+
+
 
 
     public function add_cart(Request $request,$id)
