@@ -112,7 +112,7 @@
             
          </div>
       </section>
-      {{-- @include('home.footer')
+      @include('home.footer')
       <!-- footer end -->
       <div class="cpy_">
        <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
@@ -125,4 +125,4 @@
     <script src="home/js/bootstrap.js"></script>
     <!-- custom js -->
     <script src="home/js/custom.js"></script>
-   </body> --}}
+   </body>
