@@ -1,3 +1,4 @@
+
 <div class="main-panel">
           <div class="content-wrapper">
             {{-- <div class="row">
@@ -28,9 +29,12 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
+                        {{-- <h2>Total Products</h2><br> --}}
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$12.34</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          
+                          <h3 class="mb-0">{{$totalProducts}}</h3>
+                          {{-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> --}}
+                          {{-- <a href="{{ url('admin.order')}}" class="text-white">view</a> --}}
                         </div>
                       </div>
                       <div class="col-3">
@@ -39,7 +43,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Potential growth</h6>
+                    <h6 class="text-muted font-weight-normal">Total Products</h6>
                   </div>
                 </div>
               </div>
@@ -48,9 +52,10 @@
                   <div class="card-body">
                     <div class="row">
                       <div class="col-9">
+                        {{-- <h2>Total Categories</h2><br> --}}
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$17.34</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p>
+                          <h3 class="mb-0">{{$totalCategories}}</h3>
+                          {{-- <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p> --}}
                         </div>
                       </div>
                       <div class="col-3">
@@ -59,7 +64,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Revenue current</h6>
+                    <h6 class="text-muted font-weight-normal">Total Categories</h6>
                   </div>
                 </div>
               </div>
@@ -69,8 +74,8 @@
                     <div class="row">
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$12.34</h3>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p>
+                          <h3 class="mb-0">{{$totalOrder}}</h3>
+                          {{-- <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p> --}}
                         </div>
                       </div>
                       <div class="col-3">
@@ -79,7 +84,7 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Daily Income</h6>
+                    <h6 class="text-muted font-weight-normal">Total Order</h6>
                   </div>
                 </div>
               </div>
@@ -89,8 +94,8 @@
                     <div class="row">
                       <div class="col-9">
                         <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">$31.53</h3>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p>
+                          <h3 class="mb-0">{{$totalUsers}}</h3>
+                          {{-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> --}}
                         </div>
                       </div>
                       <div class="col-3">
@@ -99,12 +104,12 @@
                         </div>
                       </div>
                     </div>
-                    <h6 class="text-muted font-weight-normal">Expense current</h6>
+                    <h6 class="text-muted font-weight-normal">Total Users</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
+            {{-- <div class="row">
               <div class="col-md-4 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -130,7 +135,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> --}}
               {{-- <div class="col-md-8 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -232,7 +237,7 @@
                   </div>
                 </div>
               </div> --}}
-            </div>
+            {{-- </div> --}}
             <div class="row">
               <div class="col-sm-4 grid-margin">
                 <div class="card">

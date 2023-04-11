@@ -18,7 +18,8 @@ use App\Http\Controllers\ProductStatisticsController;
 |
 */
 
-Route::get('/',[HomeController::class,'index']);
+Route::get('/',[HomeController::class,'index'])->name('home');
+Route::get('/redirect',[HomeController::class,'index'])->name('home');
 
 // Route::get('/userpage', function () {
 //     return view('home.userPage');
@@ -50,7 +51,7 @@ Route::get('/all_products', function () {
 Route::get('/get_product',[ProductController::class,'index'])->name('get_product');
 
 
-Route::get('/redirect',[HomeController::class,'redirect']);
+// Route::get('/redirect',[HomeController::class,'redirect']);
 Route::get('/view_category',[CategoryController::class,'view_category']);
 Route::post ('/add_category',[CategoryController::class,'add_category']);
 
@@ -101,7 +102,7 @@ Route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
 // Route::post('stripe/{totalprice}',[HomeController::class,'stripePost'])->name('stripe.post'); 
 Route::post('stripe/{totalprice}',[HomeController::class,'stripePost'])->name('stripe.post');
 
-
+Route::get('/admindashboard', [ProductStatisticsController::class, 'index']);
 
 
 

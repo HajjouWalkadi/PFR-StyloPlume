@@ -43,7 +43,7 @@
           <h2>All products</h2>
           {{-- <h3>{{$totalProducts}}</h3> --}}
 
-          <p>Total number of products: {{ $totalProducts }}</p>
+          {{-- <p>Total number of products: {{ $totalProducts }}</p> --}}
 
 
           <div class="overflow-scroll tab1 w-100" style="height:27rem; overflow-y: scroll;">

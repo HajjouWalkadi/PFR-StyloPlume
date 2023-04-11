@@ -25,18 +25,19 @@ class HomeController extends Controller
     }
 
 
-    public function redirect(){
-        $usertype=Auth::user()->usertype;
+    // public function redirect(){
+    //     $usertype=Auth::user()->usertype;
+    //     $test=2;
 
-        if($usertype=='1')
-        {
-            return view('admin.home');
-        }
-         else {
-            $product=Product::paginate(10);
-        return view('home.userpage',compact('product'));
-         }
-    }
+    //     if($usertype=='1')
+    //     {
+    //         return view('admin.home','test');
+    //     }
+    //      else {
+    //         $product=Product::paginate(10);
+    //     return view('home.userpage',compact('product'));
+    //      }
+    // }
 
     public function product_details($id)
     {
@@ -238,7 +239,7 @@ public function stripePost(Request $request,$totalprice)
         }
 
 
-    Session::flash('success', 'Payment successful!');
+    // Session::flash('success', 'Payment successful!');
           
     return back();
 }

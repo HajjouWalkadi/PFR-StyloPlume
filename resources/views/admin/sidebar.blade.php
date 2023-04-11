@@ -57,7 +57,7 @@
             <span class="nav-link">Navigation</span>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('admindashboard')}}">
               <span class="menu-icon">
                 <i class="mdi mdi-speedometer"></i>
               </span>
@@ -65,7 +65,7 @@
             </a>
           </li>
           <li class="nav-item menu-items">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url('redirect')}}">
               <span class="menu-icon">
                 {{-- <i class="bi bi-house-door"></i> --}}
                 <i class="mdi mdi-home"></i>
@@ -85,6 +85,7 @@
               <ul class="nav flex-column sub-menu">
                 <li class="nav-item"> <a class="nav-link" href="{{url('/view_product')}}">Add Products</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{url('/show_product')}}">Show Product</a></li>
+                {{-- <li class="nav-item"> <a class="nav-link" href="{{url('/productStatistics')}}">Statistics</a></li> --}}
               </ul>
             </div>
           </li>
