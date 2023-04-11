@@ -28,10 +28,14 @@
                            <a class="nav-link" href="{{route('contactPage')}}">Contact</a>
                         </li>
 
+                        
+
+
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('cart')}}"><i class="bi bi-cart-fill"></i></a>
+                           <span class="badge badge-pill badge-danger" style="font-size: 10px; text-align:end; position:absolute; top:20; right:30;">1</span>
                         </li>
-                        
+                       
 
 
                         <form class="form-inline">
