@@ -183,20 +183,30 @@ class HomeController extends Controller
 }
 
 
-public function stripePost(Request $request,$totalprice)
-{
-   
-    Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+// public function stripePost(Request $request,$totalprice)
+// {
+//     Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
 
-    Stripe\Charge::create ([
+//     Stripe\Charge::create ([
         
-            "amount" => $totalprice * 100,
-            "currency" => "MAD",
-            "source" => $request->stripeToken,
-            "description" => "Your payment has been confirmed and your order is now in the queue for shipping. Thank you for shopping with us!" 
-    ]);
+//             "amount" => $totalprice * 100,
+//             "currency" => "MAD",
+//             "source" => $request->stripeToken,
+//             "description" => "Your payment has been confirmed and your order is now in the queue for shipping. Thank you for shopping with us!" 
+//     ]);
   
-
+public function stripePost(Request $request,$totalprice)
+    {
+        dd('gi');
+        Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+    
+        Stripe\Charge::create ([
+                "amount" => $totalprice * 100,
+                "currency" => "MAD",
+                "source" => $request->stripeToken,
+                "description" => "Your payment has been confirmed and your order is now in the queue for shipping. Thank you for shopping with us!" 
+        ]);
+    
 
     $user = Auth::user();
         $userid = $user->id;

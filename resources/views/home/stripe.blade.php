@@ -51,6 +51,7 @@
                             data-stripe-publishable-key="{{ env('STRIPE_KEY') }}"
                             id="payment-form">
                         @csrf
+                        
     
                         <div class='form-row row'>
                             <div class='col-xs-12 form-group required'>
@@ -95,8 +96,7 @@
                         <div class="row">
                             <div class="col-xs-12">
                                 <button class="btn btn-primary btn-lg btn-block" style="color:black" type="submit">Pay Now</button>
-                                {{-- <button  type="submit">Pay Now</button> --}}
-                                {{-- <input style="btn-lg btn-block" type="submit" name="" value="Pay now"> --}}
+                          
                             </div>
                         </div>
                             
