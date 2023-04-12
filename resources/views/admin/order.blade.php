@@ -29,7 +29,6 @@
                           <th class="text-center" scope="col">Address</th>
                           <th class="text-center" scope="col">Product_title</th>
                           <th class="text-center" scope="col">Quantity</th>
-                          <th class="text-center" scope="col">Category</th>
                           <th class="text-center" scope="col">Price</th>
                           <th class="text-center" scope="col">Image</th>
                           <th class="text-center" scope="col">Payment Status</th>
@@ -50,7 +49,6 @@
                         <td>{{$order->address}}</td>
                         <td>{{$order->product_title}}</td>
                         <td>{{$order->quantity}}</td>
-                        <td>{{$order->category}}</td>
                         <td>{{$order->price}}</td>
                         <td>
                            <img class="prodimage" src="/product/{{$order->image}}" alt="">

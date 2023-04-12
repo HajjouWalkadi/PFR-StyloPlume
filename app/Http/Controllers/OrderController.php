@@ -20,7 +20,7 @@ class OrderController extends Controller
         $order=Order::find($id);
         $order->delivery_status="Delivered";
         $order->payment_status="Paid";
-                                                                         
+         
         $order->save();
 
         return redirect()->back();

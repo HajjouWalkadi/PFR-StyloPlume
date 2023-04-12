@@ -323,6 +323,7 @@
                           </tr>
                         </thead>
                         <tbody>
+                          {{-- @foreach($order as $order) --}}
                           <tr>
                             <td>
                               <div class="form-check form-check-muted m-0">
@@ -332,10 +333,10 @@
                               </div>
                             </td>
                             <td>
-                              <img src="assets/images/faces/face1.jpg" alt="image" />
-                              <span class="pl-2">Henry Klein</span>
+                              {{-- <img src="assets/images/faces/face1.jpg" alt="image" /> --}}
+                              <span class="pl-2">hhhhhh</span>
                             </td>
-                            <td> 02312 </td>
+                            <td> uyuuy </td>
                             <td> $14,500 </td>
                             <td> Dashboard </td>
                             <td> Credit card </td>
@@ -344,7 +345,7 @@
                               <div class="badge badge-outline-success">Approved</div>
                             </td>
                           </tr>
-                          <tr>
+                          {{-- <tr>
                             <td>
                               <div class="form-check form-check-muted m-0">
                                 <label class="form-check-label">
@@ -385,8 +386,8 @@
                             <td>
                               <div class="badge badge-outline-danger">Rejected</div>
                             </td>
-                          </tr>
-                          <tr>
+                          </tr> --}}
+                          {{-- <tr>
                             <td>
                               <div class="form-check form-check-muted m-0">
                                 <label class="form-check-label">
@@ -406,8 +407,8 @@
                             <td>
                               <div class="badge badge-outline-success">Approved</div>
                             </td>
-                          </tr>
-                          <tr>
+                          </tr> --}}
+                          {{-- <tr>
                             <td>
                               <div class="form-check form-check-muted m-0">
                                 <label class="form-check-label">
@@ -427,7 +428,8 @@
                             <td>
                               <div class="badge badge-outline-success">Approved</div>
                             </td>
-                          </tr>
+                          </tr> --}}
+                          {{-- @endforeach --}}
                         </tbody>
                       </table>
                     </div>
