@@ -21,7 +21,7 @@
                            <a class="nav-link" href="{{route('get_product')}}">Products</a>
                         </li>
                         <li class="nav-item">
-                           <a class="nav-link" href="blog_list.html">About</a>
+                           <a class="nav-link" href="">About</a>
                         </li>
 
                         <li class="nav-item">

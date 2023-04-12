@@ -32,9 +32,8 @@
                      <div class="widget_menu">
                         <h3>Menu</h3>
                         <ul>
-                           <li><a href="#">Home</a></li>
+                           <li><a href="{{url('/')}}">Home</a></li>
                            <li><a href="#">About</a></li>
-                           <li><a href="#">Services</a></li>
                            <li><a href="{{route('contactPage')}}">Contact</a></li>
                         </ul>
                      </div>
@@ -47,7 +46,7 @@
                            <li><a href="{{url('cart')}}">Checkout</a></li>
                            <li><a href="#">Login</a></li>
                            <li><a href="#">Register</a></li>
-                           <li><a href="#">Shopping</a></li>
+                           <li><a href="{{route('get_product')}}">Shopping</a></li>
                         </ul>
                      </div>
                   </div>

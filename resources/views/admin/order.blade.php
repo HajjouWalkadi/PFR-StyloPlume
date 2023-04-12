@@ -23,6 +23,7 @@
                   <table class="table table-dark table-hover table-striped"> --}}
                     <thead> 
                       <tr class="th_color">
+                          <th class="text-center" scope="col">Order ID</th>
                           <th class="text-center" scope="col">Name</th>
                           <th class="text-center" scope="col">Email</th>
                           <th class="text-center" scope="col">Phone</th>
@@ -43,6 +44,7 @@
                     @foreach($order as $order)
         
                     <tr>
+                        <td>{{$order->id}}</td>
                         <td>{{$order->name}}</td>
                         <td>{{$order->email}}</td>
                         <td>{{$order->phone}}</td>
