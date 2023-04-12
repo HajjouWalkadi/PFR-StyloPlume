@@ -20,16 +20,9 @@ class ProductStatisticsController extends Controller
         $totalProducts = Product::count();
         $totalCategories = Category::count();
 
-        $todayDate = Carbon::now()->format('d-m-Y');
-        $thisMonth = Carbon::now()->format('m');
-        $thisYear = Carbon::now()->format('Y');
-
 
 
         $totalOrder = Order::count();
-        // $todayOrder = Order::whereDate('created_at',$todayDate)->count();
-        // $thisMonthOrder = Order::whereMonths('created_at',$thisMonth)->count();
-        // $thisYearOrder = Order::whereYear('created_at',$thisYear)->count();
         $totalUsers = User::count();
         $totalUser = User::where('usertype','0')->count();
         $totalAdmin = User::where('usertype','1')->count();
