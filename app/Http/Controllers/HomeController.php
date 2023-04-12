@@ -198,7 +198,7 @@ class HomeController extends Controller
   
 public function stripePost(Request $request,$totalprice)
     {
-        dd('gi');
+        // dd($request );
         Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
     
         Stripe\Charge::create ([
@@ -239,7 +239,7 @@ public function stripePost(Request $request,$totalprice)
         }
 
 
-    // Session::flash('success', 'Payment successful!');
+    Session::flash('success', 'Payment successful!');
           
     return back();
 }

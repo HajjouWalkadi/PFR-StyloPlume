@@ -19,9 +19,6 @@ class ProductStatisticsController extends Controller
 
         $totalProducts = Product::count();
         $totalCategories = Category::count();
-
-
-
         $totalOrder = Order::count();
         $totalUsers = User::count();
         $totalUser = User::where('usertype','0')->count();

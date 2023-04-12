@@ -84,7 +84,7 @@
 
                      
                       @endforeach
-                      <?php $totalprice = 0; ?>
+                      @php($totalprice = 0)
                       @foreach($carts as $cart)
                           <?php $totalprice = $totalprice + $cart->price; ?>
                       @endforeach
