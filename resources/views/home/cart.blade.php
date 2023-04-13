@@ -92,7 +92,7 @@
 
                       <button type="button" class="btn btn-info btn-block btn-lg">
                         <div class="d-flex justify-content-between">
-                          <a href="{{url('cash_order')}}"><span>Cash On Delivery <i class="bi bi-truck"></i></span></a>
+                          <a href="{{url('cash_order')}}" onclick="return confirm('Are you sure to order this')"><span>Cash On Delivery <i class="bi bi-truck"></i></span></a>
                         </div>
                       </button>
 
