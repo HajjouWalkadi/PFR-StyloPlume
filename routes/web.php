@@ -59,7 +59,7 @@ Route::get ('/delete_category/{id}',[CategoryController::class,'delete_category'
 Route::get('/view_product',[ProductController::class,'view_product']);
 Route::post ('/add_product',[ProductController::class,'add_product']);
 
-Route::get('/show_product',[ProductController::class,'show_product']);
+Route::get('/show_product',[ProductController::class,'show_product'])->name('show_product');
 Route::get('/delete_product/{id}',[ProductController::class,'delete_product']);
 Route::get('/update_product/{id}',[ProductController::class,'update_product']);
 Route::post('/update_product_confirm/{id}',[ProductController::class,'update_product_confirm']);
