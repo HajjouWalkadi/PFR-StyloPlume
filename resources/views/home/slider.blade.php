@@ -20,7 +20,7 @@
                                  <h2 style="color:#695757; font-family: 'Adorable', sans-serif; font-weight:200; font-size:1.5rem" ><strong>Get creative with our endless stationery possibilities! </strong>
                                  </h2>
                                  <div class="btn-box">
-                                    <a href="" class="btn1 rounded-pill">
+                                    <a href="{{route('get_product')}}" class="btn1 rounded-pill">
                                     Shop Now
                                     </a>
                                  </div>
