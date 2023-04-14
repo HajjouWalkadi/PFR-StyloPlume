@@ -44,9 +44,9 @@ Route::get('/all_products', function () {
 })->name('productPage');
 
 
-// Route::get('/cart', function () {
-//     return view('home.cart');
-// })->name('cartPage');
+Route::get('/about', function () {
+    return view('home.about');
+})->name('aboutPage');
 
 Route::get('/get_product',[ProductController::class,'index'])->name('get_product');
 
@@ -68,7 +68,6 @@ Route::post('/update_product_confirm/{id}',[ProductController::class,'update_pro
 Route::get('/order',[OrderController::class,'order']);
 
 Route::get('/delivered/{id}',[OrderController::class,'delivered']);
-// Route::get('/paid/{id}',[OrderController::class,'payment']);
 
 
 

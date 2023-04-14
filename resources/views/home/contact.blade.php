@@ -24,7 +24,7 @@
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
 
-    <div class="row">
+    {{-- <div class="row"> --}}
 
  <!-- Bootstrap 5 Contact Form Snippet -->
 
