@@ -94,12 +94,14 @@
 
                             @else
                             <h4 class="price">Current price: <span>{{$product->price}} MAD</span></h4>
-
-
                             @endif
-
                         </div>
-                        <h5><strong>Category:</strong> {{$product->category}}</h5>
+                        @if($product->quantity==0)
+                            <h4 style="color: rgb(231, 58, 58)">Out of stock</h4>
+                        @else
+                            <h4 style="color: rgb(81, 151, 81) ">In stock</h4>
+                        @endif
+                        <h5><strong>Category:</strong> {{$product->category->category_name}}</h5>
 						
 
                         <!-- Quantity -->
@@ -136,7 +138,11 @@
                           
 
                           <div class="col-md-4">
-                            <button class="add-to-cart btn btn-default" type="submit">add to cart</button>
+                            @if($product->quantity==0)
+                               <button class="add-to-cart btn btn-default" type="submit" disabled>add to cart</button>
+                            @else
+                                <button class="add-to-cart btn btn-default" type="submit" >add to cart</button>
+                            @endif
                               {{-- <input type="submit" class="add-to-cart" style="width: 50vh" value="Add To Cart"> --}}
 
                           </div>

@@ -100,7 +100,7 @@
                 <td>{{$product->title}}</td>
                 <td>{{$product->description}}</td>
                 <td>{{$product->quantity}}</td>
-                <td>{{$product->category}}</td>
+                <td>{{$product->category->category_name}}</td>
                 <td>{{$product->price}}</td>
                 <td>{{$product->discount_price}}</td>
                 <td>

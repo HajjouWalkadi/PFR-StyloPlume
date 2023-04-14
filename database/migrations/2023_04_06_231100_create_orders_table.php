@@ -23,11 +23,10 @@ return new class extends Migration
 
 
             $table->string('product_title')->nullable();
-            $table->string('quantity')->nullable();
-            $table->string('quantity')->nullable();
-            $table->float('price',8, 2)->nullable();
+            $table->unsignedInteger('quantity')->nullable();
+            $table->unsignedFloat('price',8, 2)->nullable();
             $table->string('image')->nullable();
-            $table->string('product_id')->nullable();
+            $table->integer('product_id')->nullable();
 
             $table->string('payment_status')->nullable();
             $table->string('delivery_status')->nullable();

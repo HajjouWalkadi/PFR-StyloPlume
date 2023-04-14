@@ -18,10 +18,11 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('description')->nullable();
             $table->string('image')->nullable();
-            $table->string('category')->nullable();
-            $table->integer('quantity')->nullable();
-            $table->float('price')->nullable();
+            $table->unsignedInteger('quantity')->nullable();
+            $table->unsignedFloat('price')->nullable();
             $table->float('discount_price')->nullable();
+            $table->unsignedBigInteger('category_id')->index();
+            $table->foreign('category_id')->references('id')->on('categories');
             $table->timestamps();
         });
     }

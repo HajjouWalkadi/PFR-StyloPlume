@@ -19,4 +19,8 @@ class Product extends Model
         'discount_price',
 
     ];
+
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
 }

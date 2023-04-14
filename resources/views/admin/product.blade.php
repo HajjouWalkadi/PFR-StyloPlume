@@ -103,7 +103,7 @@
 
                @foreach($category as $category)
 
-              <option value="{{$category->category_name}} ">{{$category->category_name}}</option>  
+              <option value="{{$category->id}} ">{{$category->category_name}}</option>  
               @endforeach
             </select>
             </div>

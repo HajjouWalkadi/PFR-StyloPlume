@@ -27,7 +27,7 @@ class ProductController extends Controller
         $product->price=$request->price;
         $product->quantity=$request->quantity;
         $product->discount_price=$request->discount_price;
-        $product->category=$request->category;
+        $product->category_id=$request->category;
 
         $image = $request->image;
         $imagename = time().'.'.$image->getClientOriginalExtension();

@@ -97,6 +97,9 @@ class HomeController extends Controller
 
             $cart->quantity=$request->quantity;
             $cart->save();
+
+            $product->update(['quantity'=> $product->quantity - $request->quantity]);
+
             return redirect()->back();
 
         }
