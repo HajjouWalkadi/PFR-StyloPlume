@@ -48,15 +48,7 @@
                   <div class="h3 fw-light mb-5" style="font-family: 'Playfair Display', serif; font-size:3rem" >Contact Form</div>
                 </div>
   
-                <!-- * * * * * * * * * * * * * *
-            // * * SB Forms Contact Form * *
-            // * * * * * * * * * * * * * * *
-  
-            // This form is pre-integrated with SB Forms.
-            // To make this form functional, sign up at
-            // https://startbootstrap.com/solution/contact-forms
-            // to get an API token!
-            -->
+        
   
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
   
@@ -101,7 +93,6 @@
                     <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
                   </div>
                 </form>
-                <!-- End of contact form -->
   
               </div>
             </div>
