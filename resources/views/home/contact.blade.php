@@ -3,10 +3,6 @@
 <head>
 
     <style>
-        /* body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
-} */
 
 .bg-image {
   background-image: url('https://i.pinimg.com/474x/f6/a9/58/f6a958cc0bb5ea53db40b9cab1a7a0a7.jpg');
@@ -15,16 +11,12 @@
   background-repeat: no-repeat;
 }
     </style>
-    {{-- <link rel="stylesheet" href="../../../public/contact/main.css"> --}}
-    {{-- <link rel="stylesheet" href="../../../public/home/css/style.css"> --}}
     @include('home.csshome')
 </head>
 <body>
     @include('home.header')
     <!--Section: Contact v.2-->
 <section class="mb-4" >
-    {{-- url('../../../public/images/copy-space-surrounded-by-stationery.jpg') --}}
-    {{-- C:\xampp\htdocs\stylocomm\public\images\copy-space-surrounded-by-stationery.jpg --}}
 
     <!--Section heading-->
     <h1 class="h1-responsive font-weight-bold text-center my-4" style="font-size: 3rem">Contact us</h1>
