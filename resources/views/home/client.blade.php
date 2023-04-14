@@ -2,7 +2,7 @@
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Customer's Feedback
+                  Our Employees
                </h2>
             </div>
             {{-- <div id="carouselExample3Controls" class="carousel slide" data-ride="carousel">
