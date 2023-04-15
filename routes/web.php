@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\CartController;
 use App\Http\Controllers\ProductStatisticsController;
 
 /*
@@ -76,9 +77,11 @@ Route::get('/delivered/{id}',[OrderController::class,'delivered']);
 
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
-Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
+// Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
+Route::post('/add_cart/{id}',[CartController::class,'add_cart']);
 
-Route::get('/cart',[HomeController::class,'cart']);
+// Route::get('/cart',[HomeController::class,'cart']);
+Route::get('/cart',[CartController::class,'cart']);
 
 Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
 
