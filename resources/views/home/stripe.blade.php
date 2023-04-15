@@ -4,13 +4,13 @@
     <base href="/public">
     <link rel="shortcut icon" href="images/favicon.png" type="">
       <title>Stylo Plume</title>
-      <!-- bootstrap core css -->
+
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
-      <!-- font awesome style -->
+
       <link href="home/css/font-awesome.min.css" rel="stylesheet" />
-      <!-- Custom styles for this template -->
+
       <link href="home/css/style.css" rel="stylesheet" />
-      <!-- responsive style -->
+
       <link href="home/css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

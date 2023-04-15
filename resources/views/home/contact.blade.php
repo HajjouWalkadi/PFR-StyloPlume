@@ -15,18 +15,15 @@
 </head>
 <body>
     @include('home.header')
-    <!--Section: Contact v.2-->
 <section class="mb-4" >
 
-    <!--Section heading-->
+ 
     <h1 class="h1-responsive font-weight-bold text-center my-4" style="font-size: 3rem">Contact us</h1>
-    <!--Section description-->
+    
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
 
 
-
- <!-- Bootstrap 5 Contact Form Snippet -->
 
 <div class="container-fluid px-5 my-5">
     <div class="row justify-content-center">
@@ -95,7 +92,6 @@
     </div>
   </div>
   
-  <!-- CDN Link to SB Forms Scripts -->
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 </section>
@@ -104,15 +100,15 @@
  <div class="cpy_">
   <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
 </div>
-<!-- jQery -->
+
 <script src="home/js/jquery-3.4.1.min.js"></script>
-<!-- popper js -->
+
 <script src="home/js/popper.min.js"></script>
-<!-- bootstrap js -->
+
 <script src="home/js/bootstrap.js"></script>
-<!-- custom js -->
+
 <script src="home/js/custom.js"></script>
-<!--Section: Contact v.2-->
+
 </body>
 </html>
 
