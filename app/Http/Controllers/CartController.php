@@ -14,7 +14,6 @@ class CartController extends Controller
     {
         if(Auth::id())
         {
-            // return redirect()->back();
             $user=Auth::user();
             $product = Product::find($id);
             $cart=new cart;

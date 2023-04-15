@@ -76,10 +76,6 @@ class OrderController extends Controller
 
 
 
-
-
-
-
     // public function payment($id){
     //     $order= Order::find($id);
     //     $order->payment_status="Paid";

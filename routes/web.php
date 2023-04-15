@@ -71,22 +71,14 @@ Route::get('/order',[OrderController::class,'order']);
 Route::get('/delivered/{id}',[OrderController::class,'delivered']);
 
 
-
-
-
-
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
-// Route::post('/add_cart/{id}',[HomeController::class,'add_cart']);
 Route::post('/add_cart/{id}',[CartController::class,'add_cart']);
 
-// Route::get('/cart',[HomeController::class,'cart']);
 Route::get('/cart',[CartController::class,'cart']);
 
-// Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
 Route::get('/retire_cart/{id}',[CartController::class,'retire_cart']);
 
-// Route::get('/cash_order',[HomeController::class,'cash_order']);
 Route::get('/cash_order',[OrderController::class,'cash_order']);
 
 Route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
