@@ -56,25 +56,7 @@
                   </div>
                 </div>
         
-  
-                {{-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-  
-                  <div class="form-floating mb-3">
-                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                   
-                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                  </div>
-  
-              
-                  <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                    
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                  </div>
-       
-                </form> --}}
-  
+
               </div>
             </div>
   

@@ -1,12 +1,7 @@
 <head>
-   <!-- Add the following links to the <head> section of your HTML code -->
 
-<!-- CSS link for Bootstrap Icons -->
-{{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-**insert integrity hash here**" crossorigin="anonymous"> --}}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-<!-- JavaScript link for Bootstrap Icons -->
-{{-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-**insert integrity hash here**" crossorigin="anonymous"></script> --}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/bootstrap-icons.min.js"></script>
 
 </head>
@@ -53,9 +48,5 @@
               </div>
           </div>
       </div>
-      {{-- <div class="ft">
-          <p class="chk"><small class="text-muted">Still not sure?</small></p>
-          <div class="btn btn-primary">Read All Testimonials</div>
-      </div> --}}
   </div>
       </section>

@@ -22,15 +22,10 @@
       <!-- responsive style -->
       <link href="home/css/responsive.css" rel="stylesheet" />
       @include('home.csshome')
-   {{-- </head>
-   <body> --}}
       <div class="hero_area">
          <!-- header section strats -->
          @include('home.header')
-    
-      
 
-        
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
         <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -89,8 +84,6 @@
                         @endif
                         <h5><strong>Category:</strong> {{$product->category->category_name}}</h5>
 						
-
-                        <!-- Quantity -->
                         <h5><strong>Quantity:</strong></h5>
                   <div class="action">
                     <form action="{{url('add_cart',$product->id)}}" method="POST">

@@ -1,10 +1,5 @@
 <section class="arrival_section">
-         {{-- <div class="container"> --}}
-            {{-- <div class="box"> --}}
-               {{-- <div class="arrival_bg_box"> --}}
                   <img src={{url("images/azert.jpg")}} alt="">
-               {{-- </div> --}}
-               {{-- <div class="row"> --}}
                   <div class="p-4">
                      <div class="heading_container remove_line_bt">
                         <h2>
@@ -18,11 +13,5 @@
                            Shop Now
                            </a>
                         </div>
-                        {{-- <a href="" class="rounded-pill">
-                     Shop Now
-                     </a> --}}
                   </div>
-               {{-- </div> --}}
-            {{-- </div> --}}
-         {{-- </div> --}}
       </section>

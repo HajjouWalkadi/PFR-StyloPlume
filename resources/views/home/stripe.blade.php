@@ -22,8 +22,6 @@
         <span style="font-size: 15px">@include('home.header')</span>
     
 <div class="container">
-    
-  {{-- <h3>Payment by card - Total Amount {{$totalprice}} MAD</h3>  --}}
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <div class="panel panel-default credit-card-box">
@@ -114,13 +112,9 @@
       <div class="cpy_">
          <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
       </div>
-      <!-- jQery -->
       <script src="home/js/jquery-3.4.1.min.js"></script>
-      <!-- popper js -->
       <script src="home/js/popper.min.js"></script>
-      <!-- bootstrap js -->
       <script src="home/js/bootstrap.js"></script>
-      <!-- custom js -->
       <script src="home/js/custom.js"></script>
     
 </body>

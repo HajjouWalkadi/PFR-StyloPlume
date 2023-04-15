@@ -1,7 +1,6 @@
 <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  {{-- <a class="navbar-brand" style="color: black" href="?"><img style="width :3rem" src="images/logo.png" alt=""></a> --}}
                   <a class="navbar-brand" style="color: black" href="{{url('/')}}">Stylo Plume</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
@@ -33,12 +32,12 @@
                        
 
 
-                        <form class="form-inline">
+                        {{-- <form class="form-inline">
                            <button class="btn  my-2 my-sm-0 nav_search-btn" style="font-size: 15px" type="submit">
-                           {{-- <i class="fa fa-search" aria-hidden="true"></i> --}}
+                          
                            <i class="bi bi-search"></i>
                            </button>
-                        </form>
+                        </form> --}}
 
                         @if (Route::has('login'))
 

@@ -24,7 +24,7 @@
     <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
         a matter of hours to help you.</p>
 
-    {{-- <div class="row"> --}}
+
 
  <!-- Bootstrap 5 Contact Form Snippet -->
 
@@ -47,14 +47,14 @@
                   <!-- Name Input -->
                   <div class="form-floating mb-3">
                     <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-                    {{-- <label for="name">Name</label> --}}
+        
                     <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                   </div>
   
                   <!-- Email Input -->
                   <div class="form-floating mb-3">
                     <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                    {{-- <label for="emailAddress">Email Address</label> --}}
+           
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                   </div>
@@ -62,7 +62,7 @@
                   <!-- Message Input -->
                   <div class="form-floating mb-3">
                     <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                    {{-- <label for="message">Message</label> --}}
+                    
                     <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                   </div>
   
