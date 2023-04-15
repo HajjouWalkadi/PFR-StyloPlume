@@ -86,7 +86,8 @@ Route::get('/cart',[CartController::class,'cart']);
 // Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
 Route::get('/retire_cart/{id}',[CartController::class,'retire_cart']);
 
-Route::get('/cash_order',[HomeController::class,'cash_order']);
+// Route::get('/cash_order',[HomeController::class,'cash_order']);
+Route::get('/cash_order',[OrderController::class,'cash_order']);
 
 Route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
 
