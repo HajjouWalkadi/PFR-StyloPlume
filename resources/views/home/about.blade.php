@@ -70,16 +70,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
   @include('home.footer')
    <!-- footer end -->
    <div class="cpy_">

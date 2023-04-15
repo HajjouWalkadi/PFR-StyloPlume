@@ -18,7 +18,6 @@
             .loginbackgrn{
                 background-image: url('https://img.freepik.com/free-photo/flat-lay-celebrative-wedding-arrangement-mock-up_23-2148289696.jpg?size=626&ext=jpg');
                 background-repeat: no-repeat;
-                /* background-color: red; */
                 background-size: cover;
             }
             .backlog{
