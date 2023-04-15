@@ -23,6 +23,12 @@ class ProductStatisticsController extends Controller
         $totalUsers = User::count();
         $totalUser = User::where('usertype','0')->count();
         $totalAdmin = User::where('usertype','1')->count();
+        $order = Order::all();
+        $totalRevenue = 0;
+        foreach($order as $order)
+        {
+            $totalRevenue = $totalRevenue + $order->price; 
+        }
 
         // $test = 12;
         // dd($totalProducts);
@@ -37,7 +43,7 @@ class ProductStatisticsController extends Controller
 
         if($usertype=='1')
         {
-            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalUser','totalAdmin'));
+            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalUser','totalAdmin','totalRevenue'));
         }
         else {
             // $product=Product::paginate(10);

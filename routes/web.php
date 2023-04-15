@@ -71,6 +71,7 @@ Route::get('/order',[OrderController::class,'order']);
 Route::get('/delivered/{id}',[OrderController::class,'delivered']);
 
 
+
 Route::get('/product_details/{id}',[HomeController::class,'product_details']);
 
 Route::post('/add_cart/{id}',[CartController::class,'add_cart']);
