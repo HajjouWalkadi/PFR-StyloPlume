@@ -126,15 +126,15 @@ class HomeController extends Controller
        
     // }
 
-    public function retire_cart($id)
-    {
-        $carts= Cart::find($id);
+    // public function retire_cart($id)
+    // {
+    //     $carts= Cart::find($id);
 
-        $carts->delete();
+    //     $carts->delete();
 
-        return redirect()->back();
+    //     return redirect()->back();
 
-    }
+    // }
 
     public function cash_order()
     {

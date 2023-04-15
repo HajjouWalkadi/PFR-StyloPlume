@@ -83,7 +83,8 @@ Route::post('/add_cart/{id}',[CartController::class,'add_cart']);
 // Route::get('/cart',[HomeController::class,'cart']);
 Route::get('/cart',[CartController::class,'cart']);
 
-Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
+// Route::get('/retire_cart/{id}',[HomeController::class,'retire_cart']);
+Route::get('/retire_cart/{id}',[CartController::class,'retire_cart']);
 
 Route::get('/cash_order',[HomeController::class,'cash_order']);
 

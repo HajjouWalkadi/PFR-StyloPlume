@@ -67,4 +67,15 @@ class CartController extends Controller
         }
        
     }
+
+
+    public function retire_cart($id)
+    {
+        $carts= Cart::find($id);
+
+        $carts->delete();
+
+        return redirect()->back();
+
+    }
 }
