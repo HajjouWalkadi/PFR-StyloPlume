@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
     <!-- Required meta tags -->
     @include('admin.css')
 
@@ -61,31 +65,8 @@
 
           </div>
 
-          {{-- <table class="center">
-            <tr>
-                <td>Category name</td>
-                <td>Action</td>
-            </tr>
-
-            @foreach($data as $data)
-
-            <tr>
-                <td>{{$data->category_name}}</td>
-                <td>
-                    <a onclick="return confirm('Are You Sure To Delete This')" class="btn btn-danger" href="{{url('delete_category',$data->id)}}">Delete</a>
-                </td>
-            </tr>
-
-            @endforeach
-
-          </table> --}}
-
-
-
-
-{{--  --}}
-
-          <table class="table table-dark table-hover table-striped">
+          
+          <table class="table table-dark table-hover table-striped" id="myTable">
             <thead> 
               <tr class="th_color">
                   <th class="text-center" scope="col">Category name</th>
@@ -115,6 +96,14 @@
     <!-- container-scroller -->
     <!-- plugins:js -->
     @include('admin.script')
+
+
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script>
+      let table = new DataTable('#myTable', {
+        responsive: true
+      });
+    </script>
     <!-- End custom js for this page -->
   </body>
 </html>

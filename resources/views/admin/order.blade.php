@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
     <!-- Required meta tags -->
     @include('admin.css')
   </head>
@@ -17,7 +20,7 @@
                 <h2 style="text-align:center;font-size:25px; font-weight:bold">All orders </h2>
 
                 <div class="overflow-scroll tab1 w-100" style="height:27rem; overflow-y: scroll;">
-                    <table class="table table-dark table-hover table-striped">
+                    <table class="table table-dark table-hover table-striped" id="myTable">
         
                   {{-- <div class="overflow-scroll tab1 w-100" style="height:27rem;">   
                   <table class="table table-dark table-hover table-striped"> --}}
@@ -95,6 +98,12 @@
     <!-- plugins:js -->
     @include('admin.script')
 
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
+    <script>
+      let table = new DataTable('#myTable', {
+        responsive: true
+      });
+    </script>
 
     <!-- End custom js for this page -->
   </body>

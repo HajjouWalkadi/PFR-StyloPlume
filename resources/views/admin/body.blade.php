@@ -250,7 +250,7 @@
                         </div>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-codepen text-primary ml-auto"></i>
+                        <i class="icon-lg mdi mdi-chart-line-variant text-success ml-auto"></i>
                       </div>
                     </div>
                   </div>
@@ -263,13 +263,11 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">$45850</h2>
-                          <p class="text-success ml-2 mb-0 font-weight-medium">+8.3%</p>
+                          <h2 class="mb-0">{{$totalDelivered}}</h2>
                         </div>
-                        <h6 class="text-muted font-weight-normal"> 9.61% Since last month</h6>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-wallet-travel text-danger ml-auto"></i>
+                        <i class="icon-lg mdi mdi-truck-check text-primary ml-auto"></i>
                       </div>
                     </div>
                   </div>
@@ -282,13 +280,11 @@
                     <div class="row">
                       <div class="col-8 col-sm-12 col-xl-8 my-auto">
                         <div class="d-flex d-sm-block d-md-flex align-items-center">
-                          <h2 class="mb-0">$2039</h2>
-                          <p class="text-danger ml-2 mb-0 font-weight-medium">-2.1% </p>
+                          <h2 class="mb-0">{{$totalProcessing}}</h2>
                         </div>
-                        <h6 class="text-muted font-weight-normal">2.27% Since last month</h6>
                       </div>
                       <div class="col-4 col-sm-12 col-xl-4 text-center text-xl-right">
-                        <i class="icon-lg mdi mdi-monitor text-success ml-auto"></i>
+                        <i class="icon-lg mdi mdi-progress-clock text-warning ml-auto"></i>
                       </div>
                     </div>
                   </div>

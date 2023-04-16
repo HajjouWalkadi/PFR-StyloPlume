@@ -30,6 +30,8 @@ class ProductStatisticsController extends Controller
             $totalRevenue = $totalRevenue + $order->price; 
         }
 
+        $totalDelivered = Order::where('delivery_status','=','delivered')->get()->count();
+        $totalProcessing = Order::where('delivery_status','=','processing')->get()->count();
         // $test = 12;
         // dd($totalProducts);
 
@@ -43,7 +45,7 @@ class ProductStatisticsController extends Controller
 
         if($usertype=='1')
         {
-            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalUser','totalAdmin','totalRevenue'));
+            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalUser','totalAdmin','totalRevenue','totalDelivered','totalProcessing'));
         }
         else {
             // $product=Product::paginate(10);
