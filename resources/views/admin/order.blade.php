@@ -4,14 +4,14 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.css" />
-    <!-- Required meta tags -->
+    
     @include('admin.css')
   </head>
   <body>
     <div class="container-scroller">
-      <!-- partial:partials/_sidebar.html -->
+      
         @include('admin.sidebar')
-      <!-- partial -->
+  
         @include('admin.header')
 
         <div class="main-panel">
@@ -22,8 +22,7 @@
                 <div class="overflow-scroll tab1 w-100" style="height:27rem; overflow-y: scroll;">
                     <table class="table table-dark table-hover table-striped" id="myTable">
         
-                  {{-- <div class="overflow-scroll tab1 w-100" style="height:27rem;">   
-                  <table class="table table-dark table-hover table-striped"> --}}
+
                     <thead> 
                       <tr class="th_color">
                           <th class="text-center" scope="col">Order ID</th>
@@ -38,7 +37,6 @@
                           <th class="text-center" scope="col">Payment Status</th>
                           <th class="text-center" scope="col">Delivery Status</th>
                           <th class="text-center" scope="col">Delivered</th>
-                          {{-- <th class="text-center" scope="col">paid</th> --}}
                           
                       </tr>
                       </thead>
@@ -61,9 +59,7 @@
                         <td>{{$order->payment_status}}</td>
                         <td>{{$order->delivery_status}}</td>
 
-                        {{-- <td>
-                          <a class="btn btn-danger" onclick="return confirm('Are you sure to delete this')" href="">Delete</a>
-                        </td> --}}
+                       
                         <td>
 
                             @if($order->delivery_status=='processing')
@@ -75,15 +71,7 @@
                           @endif
                         </td>
 
-                        {{-- <td>
-                            @if($order->payment_status=='cash on delivery')
-
-                          <a href="{{url('paid',$order->id)}}" onclick="return confirm('Are you sure this product is paid!')" class="btn btn-secondary" href="">Paid</a>
-
-                          @else
-                          <p style="color: green">Paid</p>
-                          @endif
-                        </td> --}}
+                        
                     </tr>
         
                     @endforeach
@@ -91,11 +79,7 @@
                   </table>
                 </div>
         
-        <!-- partial -->
-        
-
-    <!-- container-scroller -->
-    <!-- plugins:js -->
+  
     @include('admin.script')
 
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.js"></script>
@@ -105,6 +89,6 @@
       });
     </script>
 
-    <!-- End custom js for this page -->
+
   </body>
 </html>

@@ -67,7 +67,7 @@
           <li class="nav-item menu-items">
             <a class="nav-link" href="{{ url('redirect')}}">
               <span class="menu-icon">
-                {{-- <i class="bi bi-house-door"></i> --}}
+                
                 <i class="mdi mdi-home"></i>
               </span>
               <span class="menu-title">Home</span>

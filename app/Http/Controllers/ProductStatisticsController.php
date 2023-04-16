@@ -21,8 +21,6 @@ class ProductStatisticsController extends Controller
         $totalCategories = Category::count();
         $totalOrder = Order::count();
         $totalUsers = User::count();
-        $totalUser = User::where('usertype','0')->count();
-        $totalAdmin = User::where('usertype','1')->count();
         $order = Order::all();
         $totalRevenue = 0;
         foreach($order as $order)
@@ -32,12 +30,7 @@ class ProductStatisticsController extends Controller
 
         $totalDelivered = Order::where('delivery_status','=','delivered')->get()->count();
         $totalProcessing = Order::where('delivery_status','=','processing')->get()->count();
-        // $test = 12;
-        // dd($totalProducts);
-
-        // return view('redirect', compact('totalProducts'));
-        // return redirect()->(['total_products' => $totalProducts]);
-        // return redirect()->route('productStatistics', ['total_products' => $totalProducts]);
+        
 
 
 
@@ -45,10 +38,9 @@ class ProductStatisticsController extends Controller
 
         if($usertype=='1')
         {
-            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalUser','totalAdmin','totalRevenue','totalDelivered','totalProcessing'));
+            return view('admin.home', compact('totalProducts','totalCategories','totalOrder','totalUsers','totalRevenue','totalDelivered','totalProcessing'));
         }
         else {
-            // $product=Product::paginate(10);
             return redirect()->route('home');
         }
 
