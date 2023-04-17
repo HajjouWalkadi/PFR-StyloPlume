@@ -97,15 +97,12 @@
             <div class="mb-3 div_design">
 
             <label for="">Product Category :</label>
-            <select  class="form-control text_color" name="category" id="" required> 
-
-            
-               <option value="{{$product->category}}" selected="">{{$product->category}}</option>  
+            <select  class="form-control text_color" name="category_id" id="" required> 
 
                @foreach($category as $category)
 
-                <option value="{{$category->category_name}} ">{{$category->category_name}}</option>  
-                @endforeach
+               <option value="{{$category->id}}" {{ $category->id == $product->category_id ? 'selected' : '' }}>{{$category->category_name}}</option>
+               @endforeach
                
             </select>
             </div>
