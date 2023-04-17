@@ -18,7 +18,7 @@
                         <a style="color:black; font-size:2rem" href="#">Stylo Plume</a>
                       </div>
                       <div class="information_f">
-                        <p><strong>ADDRESS:</strong> 84 avenue Hassan II, Marrakech City, MAROC</p>
+                        <p><strong>ADDRESS:</strong> 84 avenue Hassan II, Marrakech City, MOROCCO</p>
                         <p><strong>TELEPHONE:</strong> +212 614 67 29 84</p>
                         <p><strong>EMAIL:</strong> styloplume@gmail.com</p>
                       </div>

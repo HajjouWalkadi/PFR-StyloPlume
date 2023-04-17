@@ -68,7 +68,7 @@
                                     </div>
 
                                     <div class="col-md-4">
-                                            <input type="submit" class="add-to-cart" style="width: 50vh" value="Add To Cart">
+                                            <input type="submit" class="add-to-cart" style="width: 33vh" value="Add To Cart">
                                     </div> 
                                 </div>
                            </form>

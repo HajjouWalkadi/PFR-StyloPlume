@@ -42,6 +42,8 @@
     
                     <form 
                             role="form" 
+                            {{-- action="{{ route('stripe.post',['totalprice' => $totalprice]) }}" --}}
+
                             action="{{ route('stripe.post',$totalprice) }}" 
                             method="post" 
                             class="require-validation"
