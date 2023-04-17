@@ -321,31 +321,7 @@ a:focus {
   width: 100%;
 }
 
-/* .slider_section .carousel-indicators {
-  position: unset;
-  margin: 0;
-  margin-top: 45px;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-} */
 
-/* .slider_section .carousel-indicators li {
-  background-color: #ffffff;
-  width: 12px;
-  height: 12px;
-  border-radius: 100%;
-  opacity: 1;
-} */
-
-/* .slider_section .carousel-indicators li.active {
-  width: 20px;
-  height: 20px;
-  background-color: #AC7088;
-} */
 
 .slider_bg_box {
   position: absolute;
@@ -359,12 +335,9 @@ a:focus {
 .slider_bg_box img {
   width: 100%;
   height: 100%;
-  /* -o-object-fit: cover; */
-     /* object-fit: cover; */
-  /* -o-object-position: top right; */
-     /* object-position: top right; */
+ 
 }
-
+/* 
 .product_section .heading_container {
   margin-bottom: 20px;
 }
@@ -432,7 +405,7 @@ a:focus {
   visibility: visible;
   -webkit-transform: translateY(0);
           transform: translateY(0);
-}
+} */
 .arrival_section {
     background-color: #E6E6E6;
     display: flex;
@@ -440,7 +413,7 @@ a:focus {
     align-items: center;
     width: fit-content;
 }
-.product_section .option_container {
+/* .product_section .option_container {
   position: absolute;
   top: 0;
   left: 0;
@@ -463,9 +436,9 @@ a:focus {
   transition: all .2s;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-}
+} */
 
-.product_section .options {
+/* .product_section .options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -535,7 +508,7 @@ a:focus {
 .product_section .btn-box a:hover {
   background-color: transparent;
   color: #AC7088;
-}
+} */
 
 .arrival_section .heading_container {
   color: #002c3e;
@@ -574,16 +547,16 @@ a:focus {
   color: #AC7088;
 }
 
-.why_section .box {
+/* .why_section .box {
     text-align: center;
     margin-top: 45px;
     background-color: #002c3e;
     padding: 45px 50px;
     border-radius: 5px;
     color: #ffffff;
-}
+} */
 
-.detail-box h5 {
+/* .detail-box h5 {
     font-size: 21px;
     font-weight: 700;
 }
@@ -600,9 +573,9 @@ a:focus {
   width: 55px;
   height: auto;
   fill: #ffffff;
-}
+} */
 
-.subscribe_section {
+/* .subscribe_section {
   text-align: center;
 }
 
@@ -682,9 +655,9 @@ a:focus {
 .subscribe_section .subscribe_form form button:hover {
   background-color: transparent;
   color: #AC7088;
-}
+} */
 
-.client_section .box {
+/* .client_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +766,7 @@ a:focus {
 
 .client_section .carousel-control-next {
   right: 25%;
-}
+} */
 
 /* footer section*/
 .footer_section {
@@ -986,9 +959,9 @@ footer {
     padding: 90px 0 70px;
 }
 
-.logo_footer {
+/* .logo_footer {
     margin-bottom: 30px;
-}
+} */
 
 .information_f p {
     margin-bottom: 1.2rem;
@@ -1044,7 +1017,7 @@ div.form_sub .field input[type="email"], div.form_sub .field input[type="email"]
     height: 48px;
 }
 
-.form_sub {
+/* .form_sub {
     position: relative;
 }
 
@@ -1059,9 +1032,9 @@ div.form_sub .field input[type="email"], div.form_sub .field input[type="email"]
     height: 48px;
     font-weight: 600;
     padding: 0 15px;
-}
+} */
 
-form input {
+/* form input {
     background: #fff;
     border: solid #ccc 1px;
     padding: 15px 15px;
@@ -1103,7 +1076,7 @@ form input[type="submit"]:hover,
 form input[type="submit"]:focus {
     background: #AC7088;
     color: #fff;
-}
+} */
 
 /** cpy **/
 
