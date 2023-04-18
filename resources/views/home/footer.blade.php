@@ -42,7 +42,6 @@
                      <div class="widget_menu">
                         <h3>Account</h3>
                         <ul>
-                           <li><a href="#">Account</a></li>
                            <li><a href="{{url('cart')}}">Checkout</a></li>
                            <li><a href="#">Login</a></li>
                            <li><a href="#">Register</a></li>
