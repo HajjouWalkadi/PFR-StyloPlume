@@ -50,10 +50,10 @@
                         @else
 
                         <li class="nav-item">
-                           <a class="btn btn-primary" id="logincss" href="{{ route('login') }}">Login</a>
+                           <a class="btn btn" style="background-color: #AC7088" id="logincss" href="{{ route('login') }}">Login</a>
                         </li>
                         <li class="nav-item">
-                           <a class="btn btn-primary" href="{{ route('register') }}">Register</a>
+                           <a class="btn btn" style="background-color: #AC7088" href="{{ route('register') }}">Register</a>
                         </li>
                         @endauth
 

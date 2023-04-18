@@ -95,7 +95,7 @@
                   </div>
            
                   <div class="form-group text-center">
-                      <button class="btn btn-success btn-submit">Submit</button>
+                      <button class="btn btn btn-submit" style="background-color: #AE9D70">Submit</button>
                   </div>
               </form>
   

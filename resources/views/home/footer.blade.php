@@ -33,7 +33,7 @@
                         <h3>Menu</h3>
                         <ul>
                            <li><a href="{{url('/')}}">Home</a></li>
-                           <li><a href="#">About</a></li>
+                           <li><a href="{{route('aboutPage')}}">About</a></li>
                            <li><a href="{{route('contactPage')}}">Contact</a></li>
                         </ul>
                      </div>
@@ -43,8 +43,8 @@
                         <h3>Account</h3>
                         <ul>
                            <li><a href="{{url('cart')}}">Checkout</a></li>
-                           <li><a href="#">Login</a></li>
-                           <li><a href="#">Register</a></li>
+                           <li><a href="{{ route('login') }}">Login</a></li>
+                           <li><a href="{{ route('register') }}">Register</a></li>
                            <li><a href="{{route('get_product')}}">Shopping</a></li>
                         </ul>
                      </div>

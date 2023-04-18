@@ -24,9 +24,9 @@ Chez StyloPlume, notre objectif est de fournir une expérience d'achat en ligne 
 
 ### Voici les diagrammes UML:
 
-#### * [Diagramme de classe](https://lucid.app/lucidchart/invitations/accept/inv_b37cd758-5f54-41cb-af88-457826b54c91)
+#### [Diagramme de classe](https://lucid.app/lucidchart/invitations/accept/inv_b37cd758-5f54-41cb-af88-457826b54c91)
  
 
-#### * [Cas d'utilisateur](https://lucid.app/lucidspark/7eb3015e-6da2-4b84-8b2d-f7189c3e526b/edit?invitationId=inv_d702af40-d505-4b0a-8cd7-dff655470897&page=0_0#)
+#### [Cas d'utilisateur](https://lucid.app/lucidspark/7eb3015e-6da2-4b84-8b2d-f7189c3e526b/edit?invitationId=inv_d702af40-d505-4b0a-8cd7-dff655470897&page=0_0#)
 
-#### * Diagramme de séquence 
+#### Diagramme de séquence 
