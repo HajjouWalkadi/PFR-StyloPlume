@@ -43,7 +43,7 @@ class HomeController extends Controller
 
     public function stripe($totalprice)
 {
-    // dd('hiiiiiiiii');
+    
     return view('home.stripe', compact('totalprice'));
 }
 
@@ -51,8 +51,8 @@ class HomeController extends Controller
   
 public function stripePost(Request $request,$totalprice)
     {
-        // dd($request );
-        Stripe\Stripe::setApiKey(env('STRIPE_SECRET'));
+
+        Stripe\Stripe::setApiKey(config('services.stripe.secret'));
     
         Stripe\Charge::create ([
                 "amount" => $totalprice * 100,
