@@ -41,7 +41,7 @@
               <div class="col-sm-6 d-none d-sm-block bg-image"></div>
               <div class="col-sm-6 p-4">
                 <div class="text-center" >
-                  <div class="h3 fw-light mb-5" style="font-family: 'Playfair Display', serif; font-size:3rem" >About Us</div>
+                  <div class="h3 fw-light mb-5" style="font-family: 'Playfair Display', serif; font-size:3rem; color:rgb(234,231,234)" >About Us</div>
                 </div>
   
 
@@ -49,7 +49,7 @@
                 <div class="container">
                   <div class="row " >
                     <div class="col-lg-12">
-                      <p> <span style="font-family: 'Southernsky', sans-serif; font-size:1rem">“StyloPlume”</span> est une boutique en ligne de fournitures de bureau ! Nous offrons une vaste sélection de produits pour vous aider à rester organisé et à travailler efficacement. Que vous soyez étudiant, professionnel ou simplement un passionné de papeterie, nous avons tout ce dont vous avez besoin pour écrire, dessiner, prendre des notes ou planifier.<br>
+                      <p style="color:rgb(234,231,234);line-height :2rem;"> <span style="font-family: 'Southernsky', sans-serif; font-size:1.5rem; color:#E0D4CA">StyloPlume</span> est une boutique en ligne de fournitures de bureau ! Nous offrons une vaste sélection de produits pour vous aider à rester organisé et à travailler efficacement. Que vous soyez étudiant, professionnel ou simplement un passionné de papeterie, nous avons tout ce dont vous avez besoin pour écrire, dessiner, prendre des notes ou planifier.<br>
                         Nous nous efforçons de vous offrir un service clientèle de qualité supérieure, avec des prix compétitifs et une livraison rapide. Nous avons également une politique de retour facile pour vous assurer que vous êtes entièrement satisfait de votre achat.
                       </p>
                     </div>
