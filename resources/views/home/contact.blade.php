@@ -63,23 +63,9 @@
                       </div>
                   </div>
                   <div class="row">
-                      {{-- <div class="col-md-6">
-                          <div class="form-group">
-                              <strong>Phone:</strong>
-                              <input type="text" name="phone" class="form-control" placeholder="Phone" value="{{ old('phone') }}">
-                              @if ($errors->has('phone'))
-                                  <span class="text-danger">{{ $errors->first('phone') }}</span>
-                              @endif
-                          </div>
-                      </div> --}}
+                  
                       <div class="col-md-6">
-                          {{-- <div class="form-group">
-                              <strong>Subject:</strong>
-                              <input type="text" name="subject" class="form-control" placeholder="Subject" value="{{ old('subject') }}">
-                              @if ($errors->has('subject'))
-                                  <span class="text-danger">{{ $errors->first('subject') }}</span>
-                              @endif
-                          </div> --}}
+                        
                       </div>
                   </div>
                   <div class="row">
@@ -98,50 +84,6 @@
                       <button class="btn btn btn-submit" style="background-color: #AE9D70">Submit</button>
                   </div>
               </form>
-  
-                {{-- <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-  
-                  <!-- Name Input -->
-                  <div class="form-floating mb-3">
-                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
-        
-                    <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
-                  </div>
-  
-                  <!-- Email Input -->
-                  <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-           
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
-                    <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
-                  </div>
-  
-                  <!-- Message Input -->
-                  <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
-                    
-                    <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
-                  </div>
-  
-                  <!-- Submit success message -->
-                  <div class="d-none" id="submitSuccessMessage">
-                    <div class="text-center mb-3">
-                      <div class="fw-bolder">Form submission successful!</div>
-                      <p>To activate this form, sign up at</p>
-                      <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                    </div>
-                  </div>
-  
-                  <!-- Submit error message -->
-                  <div class="d-none" id="submitErrorMessage">
-                    <div class="text-center text-danger mb-3">Error sending message!</div>
-                  </div>
-  
-                  <!-- Submit button -->
-                  <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
-                  </div>
-                </form> --}}
   
               </div>
             </div>

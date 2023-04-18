@@ -83,9 +83,9 @@ Route::get('/retire_cart/{id}',[CartController::class,'retire_cart']);
 
 Route::get('/cash_order',[OrderController::class,'cash_order']);
 
-Route::get('/stripe/{totalprice}',[HomeController::class,'stripe']);
+Route::get('/payment/{totalprice}',[HomeController::class,'stripe']);
 
-Route::post('stripe/{totalprice}',[HomeController::class,'stripePost'])->name('stripe.post');
+Route::post('payment/{totalprice}',[HomeController::class,'stripePost'])->name('stripe.post');
 
 Route::get('/admindashboard', [ProductStatisticsController::class, 'index']);
 

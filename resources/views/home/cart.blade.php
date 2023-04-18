@@ -86,7 +86,7 @@
 
                       
                       <button type="button" id="payment" class="btn btn-info btn-block btn-lg text-left">
-                         <a href="{{url('stripe',$totalprice)}}"> Payment By Card <i class="bi bi-credit-card"></i></a>
+                         <a href="{{url('payment',$totalprice)}}"> Payment By Card <i class="bi bi-credit-card"></i></a>
                       </button>
 
   
