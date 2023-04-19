@@ -19,7 +19,7 @@
                   <i class="mdi mdi-view-grid"></i>
                 </a>
               </li> --}}
-              <li class="nav-item dropdown border-left">
+              {{-- <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
                   <i class="mdi mdi-email"></i>
                   <span class="count bg-success"></span>
@@ -59,8 +59,8 @@
                   <div class="dropdown-divider"></div>
                   <p class="p-3 mb-0 text-center">4 new messages</p>
                 </div>
-              </li>
-              <li class="nav-item dropdown border-left">
+              </li> --}}
+              {{-- <li class="nav-item dropdown border-left">
                 <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
                   <i class="mdi mdi-bell"></i>
                   <span class="count bg-danger"></span>
@@ -106,7 +106,7 @@
                   <div class="dropdown-divider"></div>
                   <p class="p-3 mb-0 text-center">See all notifications</p>
                 </div>
-              </li>
+              </li> --}}
               <x-app-layout>
               </x-app-layout>
           </div>

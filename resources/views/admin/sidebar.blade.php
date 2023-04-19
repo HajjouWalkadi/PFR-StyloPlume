@@ -11,10 +11,17 @@
                   <img class="img-xs rounded-circle " src="https://i.pinimg.com/474x/58/60/f0/5860f0fc26bd9dcf724bfbac832368fe.jpg" alt="">
                   <span class="count bg-success"></span>
                 </div>
-                <div class="profile-name">
+                {{-- <div class="profile-name">
                   <h5 class="mb-0 font-weight-normal">Henry Klein</h5>
                   <span>Gold Member</span>
-                </div>
+                </div> --}}
+                @auth
+                    <div class="profile-name">
+                        <h5 class="mb-0 font-weight-normal">{{ Auth::user()->name }}</h5>
+                        <span>Admin</span>
+                    </div>
+                @endauth
+
               </div>
               <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
               <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
