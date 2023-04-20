@@ -13,7 +13,6 @@ class Product extends Model
         'title',
         'description',
         'image',
-        'category',
         'quantity',
         'price',
         'discount_price',
@@ -23,4 +22,10 @@ class Product extends Model
     public function category(){
         return $this->belongsTo(Category::class);
     }
+
+    public function ReviewData()
+    {
+    return $this->hasMany('App\Models\ReviewRating','product_id');
+    }
 }
+
