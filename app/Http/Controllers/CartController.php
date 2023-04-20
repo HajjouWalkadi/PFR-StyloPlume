@@ -77,4 +77,17 @@ class CartController extends Controller
         return redirect()->back();
 
     }
+
+
+
+    // public function CartCount($user_id)
+    // {
+    //     $productNum = Product::with('product')
+    //         ->whereHas('product', function($query) use ($user_id) {
+    //             $query->where('user_id', $user_id)
+    //                 ->where('status', NULL);
+    //         })->count();
+
+    //     return $productNum;
+    // }
 }
