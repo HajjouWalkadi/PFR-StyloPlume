@@ -26,6 +26,11 @@
        
 
     </style>
+
+    <script defer src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.3/parsley.min.js"></script>
+    
   </head>
   <body>
     <div class="container-scroller">
@@ -58,44 +63,44 @@
                 </div>
               <div class="modal-body">
 
-            <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data">
+            <form action="{{url('/add_product')}}" method="POST" enctype="multipart/form-data" data-parsley-validate>
 
             @csrf
             <div class="mb-3 div_design">
 
             <label for="">Product Title</label>
-            <input class="form-control text_color" type="text" name="title" placeholder="Write a title" required>
+            <input class="form-control text_color" type="text" name="title" placeholder="Write a title" required data-parsley-required>
 
             </div>
             <div class="mb-3 div_design">
 
             <label for="">Product Description</label>
-            <input class="form-control text_color" type="text" name="description" placeholder="Write a Description" required>
+            <input class="form-control text_color" type="text" name="description" placeholder="Write a Description" required data-parsley-required >
 
             </div>
             <div class="mb-3 div_design">
 
             <label for="">Product Price</label>
-            <input class="form-control text_color" type="number" min="0" name="price" placeholder="Write a price" required>
+            <input class="form-control text_color" type="number" min="0" name="price" placeholder="Write a price" required data-parsley-required>
 
             </div>
             <div class="mb-3 div_design">
 
             <label for="">Discount Price</label>
-            <input class="form-control text_color" type="number" name="discount_price" placeholder="Write a discount ">
+            <input class="form-control text_color" type="number" name="discount_price" placeholder="Write a discount" data-parsley-type="number">
 
             </div>
             <div class="mb-3 div_design">
 
             <label for="">Product Quantity</label>
-            <input class="form-control text_color" type="number" min="0" name="quantity" placeholder="Write a quantity" required>
+            <input class="form-control text_color" type="number" min="0" name="quantity" placeholder="Write a quantity" required data-parsley-required>
 
             </div>
             
             <div class="mb-3 div_design">
 
             <label for="">Product Category :</label>
-            <select  class="form-control text_color" name="category" id="" required> 
+            <select  class="form-control text_color" name="category" id="" required data-parsley-required> 
 
             
                <option value="" selected="">Add a category here</option>  
@@ -123,8 +128,6 @@
           </div>
           </div>
         </div>
-
-        
 
         
     @include('admin.script')
