@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedFloat('price')->nullable();
             $table->float('discount_price')->nullable();
             $table->unsignedBigInteger('category_id')->index();
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('cascade');
             $table->timestamps();
         });
     }
