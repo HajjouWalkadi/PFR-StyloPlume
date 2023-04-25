@@ -51,6 +51,7 @@ Route::get('/about', function () {
 })->name('aboutPage');
 
 Route::get('/get_product',[ProductController::class,'index'])->name('get_product');
+Route::get('/get_product/{category}',[ProductController::class,'FilterByCategory'])->name('FilterByCategory');
 
 
 // Route::get('/redirect',[HomeController::class,'redirect']);
