@@ -42,6 +42,8 @@ class ProductController extends Controller
         $product = Product::all();  
         return view('home.product', ['product'=>$product]);
     }
+
+
     public function view_product()
     {
         $category=Category::all();
@@ -191,4 +193,10 @@ class ProductController extends Controller
     //     }
     // }
     
+    public function FilterByCategory($category){
+          $cat = Category::where('category_name','=',$category)->first();
+          $product = Product::where('category_id','=',$cat->id)->get();
+
+        return view('home.product', ['product'=>$product]);
+    }
 }
