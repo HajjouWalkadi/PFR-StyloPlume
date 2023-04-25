@@ -26,7 +26,7 @@
                    <div class="product-grid mt-4">
                        <div class="product-image">
                            <a href="#" class="image">
-                               <img src="product/{{$product->image}}" alt="">
+                               <img src="/product/{{$product->image}}" alt="">
                            </a>
                            <span class="product-discount-label"></span>
                            <ul class="product-links">
@@ -39,7 +39,7 @@
                             
                                 <div class="row">
                                     <div class="col-md-4">
-                                        <input type="number" name="quantity" class="add-to-cart" style="width: 18vh" value="1" min="1">
+                                        <input type="number" name="quantity" max="{{$product->quantity}}" class="add-to-cart" style="width: 18vh" value="1" min="0">
 
                                     </div>
 
@@ -52,7 +52,7 @@
                            
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="#">{{$product->title}}</a></h3>
+                           <h3 class="title"><a href="{{url('product_details',$product->id)}}">{{$product->title}}</a></h3>
                            
                            @if($product->discount_price!=null)
 
@@ -85,11 +85,11 @@
        <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
     </div>
 
-    <script src="home/js/jquery-3.4.1.min.js"></script>
+    <script src="/home/js/jquery-3.4.1.min.js"></script>
  
-    <script src="home/js/popper.min.js"></script>
+    <script src="/home/js/popper.min.js"></script>
 
-    <script src="home/js/bootstrap.js"></script>
+    <script src="/home/js/bootstrap.js"></script>
 
-    <script src="home/js/custom.js"></script>
+    <script src="/home/js/custom.js"></script>
    </body>

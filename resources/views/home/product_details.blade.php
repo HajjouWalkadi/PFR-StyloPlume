@@ -16,11 +16,11 @@
    
       <link rel="stylesheet" type="text/css" href="home/css/bootstrap.css" />
  
-      <link href="home/css/font-awesome.min.css" rel="stylesheet" />
+      <link href="/home/css/font-awesome.min.css" rel="stylesheet" />
 
-      <link href="home/css/style.css" rel="stylesheet" />
+      <link href="/home/css/style.css" rel="stylesheet" />
 
-      <link href="home/css/responsive.css" rel="stylesheet" />
+      <link href="/home/css/responsive.css" rel="stylesheet" />
       @include('home.csshome')
       <div class="hero_area">
 
@@ -92,7 +92,7 @@
                       <div class="row">
                           <div class="col-md-4">
                             <div class="form-outline">
-                              <input id="form1" min="1" name="quantity" value="1" type="number" class="form-control" />
+                              <input id="form1" min="0" max="{{$product->quantity}}" name="quantity" value="1" type="number" class="form-control" />
                             </div>
 
                           </div>
@@ -125,12 +125,12 @@
          <p class="mx-auto">© 2023 All Rights Reserved By Stylo Plume<br></p>
       </div>
      
-      <script src="home/js/jquery-3.4.1.min.js"></script>
+      <script src="/home/js/jquery-3.4.1.min.js"></script>
      
-      <script src="home/js/popper.min.js"></script>
+      <script src="/home/js/popper.min.js"></script>
       
-      <script src="home/js/bootstrap.js"></script>
+      <script src="/home/js/bootstrap.js"></script>
       
-      <script src="home/js/custom.js"></script>
+      <script src="/home/js/custom.js"></script>
    </body>
 </html>
