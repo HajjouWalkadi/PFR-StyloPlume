@@ -23,7 +23,7 @@
                 @endauth
 
               </div>
-              <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
+              {{-- <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
               <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
                 <a href="#" class="dropdown-item preview-item">
                   <div class="preview-thumbnail">
@@ -57,7 +57,7 @@
                     <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
                   </div>
                 </a>
-              </div>
+              </div> --}}
             </div>
           </li>
           <li class="nav-item nav-category">

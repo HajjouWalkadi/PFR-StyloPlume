@@ -76,7 +76,7 @@
                            
                        </div>
                        <div class="product-content">
-                           <h3 class="title"><a href="#">{{$product->title}}</a></h3>
+                           <h3 class="title"><a href="{{url('product_details',$product->id)}}">{{$product->title}}</a></h3>
                            
                            @if($product->discount_price!=null)
 
