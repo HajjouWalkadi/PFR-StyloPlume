@@ -29,4 +29,4 @@ Chez StyloPlume, notre objectif est de fournir une expérience d'achat en ligne 
 
 #### [Cas d'utilisateur](https://lucid.app/lucidspark/7eb3015e-6da2-4b84-8b2d-f7189c3e526b/edit?invitationId=inv_d702af40-d505-4b0a-8cd7-dff655470897&page=0_0#)
 
-#### Diagramme de séquence 
+ 
