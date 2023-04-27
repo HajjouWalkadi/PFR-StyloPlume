@@ -12,33 +12,7 @@ class ProductController extends Controller
     
 
 
-
-    // public function store(ProductRequest $request)
-    // {
-    //     // Retrieve the validated request data
-    //     $validated = $request->validated();
-
-    //     // Create a new product
-    //     $product = new Product();
-    //     $product->title = $validated['title'];
-    //     $product->description = $validated['description'];
-    //     // ...
-
-    //     // Save the product to the database
-    //     $product->save();
-
-    //     // Return a response
-    //     return response()->json(['message' => 'Product created successfully']);
-    // }
-
-
-
-
-
-
-
     public  function index(){
-        // dd('hi hajjou');
         $product = Product::all();  
         return view('home.product', ['product'=>$product]);
     }
@@ -49,51 +23,6 @@ class ProductController extends Controller
         $category=Category::all();
         return view('admin.product',compact('category'));
     }
-
-
-
-//     public function add_product(ProductRequest $request) 
-// {
-    // $data = $request->validated();
-    // Retrieve the validated request data
-    // $validated = $request->validated(
-
-    // );
-
-    // Create a new product
-    // $product = new Product();
-    // $data = [
-    //         'title' => $request->input('title'),
-    //         'description' => $request->input('description'),
-    //         'price' => $request->input('price'),
-    //         'quantity' => $request->input('quantity'),
-    //         'discount_price ' => $request->input('discount_price '),
-    //         'image' => $request->file('image')->store('image','public'),
-    //     ];
-
-
-
-    // $product->title = $validated['title'];
-    // $product->description = $validated['description'];
-    // $product->price = $validated['price'];
-    // $product->quantity = $validated['quantity'];
-    // $product->discount_price = $validated['discount_price'];
-    // $product->category_id = $validated['category'];
-
-    // $image = $validated['image'];
-    // $imagename = time().'.'.$image->getClientOriginalExtension();
-    // $validated['image']->move('product',$imagename);
-    // $product->image = $imagename;
-
-    // Save the product to the database
-    // $product->save();
-    
-    // Return a response
-    // return redirect()->back()->with('message','Product Added Successfully');
-    // return response()->json(['message' => 'Product added successfully']);
-// }
-
-
 
 
 
@@ -176,22 +105,6 @@ class ProductController extends Controller
 
     }
 
-
-    // public function getProduct(Request $request){
-    //     if($request->ajax()){
-    //         $data=Product::latest()->get();
-
-    //         return DataTables::of($data)
-    //            ->addIndexColumn()
-    //            ->addColumn('action',function($row){
-    //             $actionBtn = '<a href="javascript:void(0);" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0);" class="delete btn btn-danger btn-sm">Delete</a>';
-    //            return $actionBtn;
-    //     })
-    //     ->rawColumns(['action'])
-    //     ->make(true);
-
-    //     }
-    // }
     
     public function FilterByCategory($category){
           $cat = Category::where('category_name','=',$category)->first();

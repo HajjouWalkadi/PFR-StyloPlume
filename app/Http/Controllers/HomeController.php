@@ -18,6 +18,7 @@ class HomeController extends Controller
 
     public function index()
     { 
+        
         $product=Product::paginate(8);
         return view('home.userpage',compact('product'));
 

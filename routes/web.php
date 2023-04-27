@@ -23,9 +23,6 @@ use App\Http\Controllers\ContactController;
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('/redirect',[HomeController::class,'index'])->name('home');
 
-// Route::get('/userpage', function () {
-//     return view('home.userPage');
-// })->name('userPage');
 
 Route::middleware([
     'auth:sanctum',
@@ -54,7 +51,6 @@ Route::get('/get_product',[ProductController::class,'index'])->name('get_product
 Route::get('/get_product/{category}',[ProductController::class,'FilterByCategory'])->name('FilterByCategory');
 
 
-// Route::get('/redirect',[HomeController::class,'redirect']);
 Route::get('/view_category',[CategoryController::class,'view_category']);
 Route::post ('/add_category',[CategoryController::class,'add_category']);
 

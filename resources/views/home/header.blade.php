@@ -9,7 +9,7 @@
 <header class="header_section">
             <div class="container">
                <nav class="navbar navbar-expand-lg custom_nav-container ">
-                  <a class="navbar-brand" style="color: black" href="{{url('/')}}">Stylo Plume</a>
+                  <a  style="color: black;font-family:Southernsky" href="{{url('/')}}">Stylo Plume</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class=""> </span>
                   </button>
@@ -48,21 +48,24 @@
                         </li>
 
                         
-
+                     
 
                         <li class="nav-item">
                            <a class="nav-link" href="{{url('cart')}}"><i class="bi bi-cart-fill"></i></a>
-                           {{-- <span class="badge badge-pill badge-danger" style="font-size: 10px; text-align:end; position:absolute; top:20; right:30;">{{ $productCount = app('App\Http\Controllers\CartController')->CartCount(Session::get('user')->id)}}</span> --}}
+                           @php 
+                              use App\Models\Cart;
+                        
+                              if(Auth::user()){ 
+                              $cartItemsCount = Cart::where('user_id', '=', Auth::user()->id)->count();
+                           @endphp
+                                 <span class="badge badge-pill badge" style="font-size: 10px; position:absolute; background-color: #AC7088; " >{{ $cartItemsCount}}</span>
+
+                           @php
+                              }
+                          @endphp
                         </li>
                        
 
-
-                        {{-- <form class="form-inline">
-                           <button class="btn  my-2 my-sm-0 nav_search-btn" style="font-size: 15px" type="submit">
-                          
-                           <i class="bi bi-search"></i>
-                           </button>
-                        </form> --}}
 
                         @if (Route::has('login'))
 

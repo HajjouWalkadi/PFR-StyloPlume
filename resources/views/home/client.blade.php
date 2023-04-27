@@ -14,7 +14,6 @@
                            
                            <div class="user-image">
                                
-                       {{-- <img src="https://i.imgur.com/PKHvlRS.jpg" class="rounded-circle" width="80"> --}}
                                
                            </div>
                            
@@ -43,7 +42,6 @@
                            
                            <div class="user-image">
                                
-                       {{-- <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"> --}}
                                
                            </div>
                            
@@ -74,7 +72,6 @@
                            
                            <div class="user-image">
                                
-                       {{-- <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80"> --}}
                                
                            </div>
                            

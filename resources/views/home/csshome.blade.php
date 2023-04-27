@@ -8,7 +8,6 @@
       <meta name="keywords" content="" />
       <meta name="description" content="" />
       <meta name="author" content="" />
-      {{-- <link rel="shortcut icon" href="home/images/favicon.png" type=""> --}}
       <title>Stylo Plume</title>
   
       <link rel="stylesheet" type="text/css" href="/home/css/bootstrap.css" />

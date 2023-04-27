@@ -55,16 +55,7 @@
 					</div>
 					<div class="details col-md-6">
 						<h3 class="product-title">{{$product->title}}</h3>
-						{{-- <div class="rating">
-							<div class="stars">
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star checked"></span>
-								<span class="fa fa-star"></span>
-								<span class="fa fa-star"></span>
-							</div>
-							<span class="review-no">41 reviews</span>
-						</div> --}}
+					
 						<p class="product-description">{{$product->description}}</p>
                         <div class="d-flex flex-row">
                             @if($product->discount_price!=null)

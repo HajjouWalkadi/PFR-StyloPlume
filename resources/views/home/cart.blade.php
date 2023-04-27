@@ -145,13 +145,3 @@
 
 
 
-
-
-{{-- <script>
-  let payment = document.getElementById('payment')
-  let cardForm = document.getElementById('cardForm')
-  payment.addEventListener('click', function() {
-    cardForm.classList.add('d-flex')
-  })
-
-</script> --}}
